@@ -1,4 +1,4 @@
--- $Name: Zavodoi2$
+-- $Name: Zavodoi$
 -- $Version: 0.02$
 -- $Author: Algeron$
 instead_version "2.4.0"
@@ -16,7 +16,7 @@ game.forcedsc = true; -- атрибут, чтобы описание сцены 
 global {
 	
 	dolgota = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q'};
-	cells = {};
+	cells = list {};
 	youarehere = 0;
 	turn = 0;
 	time = 4;
@@ -30,12 +30,6 @@ global {
 	
 	confidence = 0;
 	sympathy = 0;
-
-	maxX =17;
-	maxY =12;
-
-	water_wells = {{1,5}, {14,3},{6,9},{5,9},{10,17}};
-
 	}
 	
 stead.phrase_prefix = '* ';
@@ -75,38 +69,21 @@ end
 
 																--[[ ГЕНЕРАТОР КАРТЫ ]]--
 
-function myconstructor(x,y)
-	local v={};
-	v.x = x
-	v.y = y
-	v.nam =   tostring(x)..",".. tostring(y)
+function myconstructor()
+	local v = {}
+	v.x = adress[2]
+	v.y = adress[3]
+	v.idx = adress[4]
+	v.adress = adress[1]
+	youarehere = adress[4]
+	v.nam = table.concat(adress, ' ')
 	v.dsc = 'Мы где-то в пустоши.'
 
 	
-	local north = vroom('Север', 'cells['..tostring(x)..']'..'['..tostring(y-1)..']')
-	local south = vroom('Юг', 'cells['..tostring(x)..']'..'['..tostring(y+1)..']')
-	local west = vroom('Запад', 'cells['..tostring(x-1)..']'..'['..tostring(y)..']')
-	local east = vroom('Восток', 'cells['..tostring(x+1)..']'..'['..tostring(y)..']')
-
-	v.way=list {}
-	if x>1 then
-		table.insert(v.way,west)
-	end
-
-	if x<maxX then
-		table.insert(v.way,east)
-	end
-	
-
-	if y>1 then
-		table.insert(v.way,north)
-	end
-
-	if y<maxY then
-		table.insert(v.way,south)
-	end
-
---[[
+	local north = vroom('Север', 'cells['..tostring(youarehere-17)..']')
+	local south = vroom('Юг', 'cells['..tostring(youarehere+17)..']')
+	local west = vroom('Запад', 'cells['..tostring(youarehere-1)..']')
+	local east = vroom('Восток', 'cells['..tostring(youarehere+1)..']')
 	local hunger_scene = vroom('Голод', 'hunger_scene')
 
 	local no_north = { 'b2', 'h2', 'j2', 'k2', 'l2', 'm3', 'n3', 'o4', 'p5', 'f6', 'q6', 'g7', "h8", "i8", "j8", 'a9' }
@@ -139,7 +116,42 @@ function myconstructor(x,y)
 		end
 	end
 
-	]]--
+	
+
+	for _,c in pairs(no_north) do
+		if c == v.adress then
+			north = nil
+			break
+		elseif v.y == 1 then
+			north = nil
+		end
+	end
+	for _,c in pairs(no_south) do
+		if c == v.adress then
+			south = nil
+			break
+		elseif v.y == 12 then
+			south = nil
+		end
+	end
+	for _,c in pairs(no_west) do
+		if c == v.adress then
+			west = nil
+			break
+		elseif v.x == 1 then
+			west = nil
+		end
+	end
+	for _,c in pairs(no_east) do
+		if c == v.adress then
+			east = nil
+			break
+		elseif v.x == 17 then
+			east = nil
+		end
+	end
+	
+	v.way = {west, north, south, east, hunger_scene}
 
 	
 	v.entered = function (s, f)
@@ -229,7 +241,7 @@ function myconstructor(x,y)
 	end	
 	
 	
-	return v
+	return room(v)
 end
 
 --комнаты не-пустоши
@@ -306,6 +318,18 @@ hunger_scene = room {
 	way = {};
 	}
 
+main = room {
+	nam = 'Старт';
+	dsc = 'Начало игры';
+	way = { 
+		vroom('В Полношь', 'cells[109]'),
+		};
+	obj = { 
+			vway("дальше", "{Прыг!}", 'novgorod'),
+			vway("фыва", "{в бункер}^", 'q1_entrance'),
+			vway("фыва", "{диалог в бункере}^", 'q1_dlg_panel'),
+		};
+	}
 
 	
 																	--[[ СТАРТ ]]--
@@ -348,33 +372,14 @@ status_quest = stat {
 
 -- фабрика клеток Полноши
 counter = 0
-for x = 1, maxX do
-	cells[x]={};
-	for y = 1, maxY do
-		--adress = {dolgota[x]..y, x, y, counter}
- 		cells[x][y] = room(myconstructor(x,y))
+for y = 1, 12 do
+	for x = 1, #dolgota do
+		counter = counter + 1
+		adress = {dolgota[x]..y, x, y, counter}
+		local newroom = new([[myconstructor()]])
+		cells:add(newroom)
 	end
 end
-
-
-for k,v in pairs(water_wells) do
-	pn('вода', v)		
-end
-
-
---[[x
-cells[1][1] = room {
-	nam = 'Старт';
-	dsc = 'Начало игры';
-	way = { 
-		vroom('В Полношь', 'cells[109]'),
-		};
-
-	}
-]]--
-
-
-main=cells[1][1]
 
 take(status_map)
 take(status_relationship)
@@ -382,7 +387,11 @@ take(status_relationship)
 take('sympathiser')
 take('confidenser')
 
+-- bla = cells[194]
+-- bla.way:add('cache2')
 
+																  --[[ ФАЙЛЫ ИГРЫ ]]--
 
+dofile "g1_novgorod.lua"
 
 
