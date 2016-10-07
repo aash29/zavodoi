@@ -1,0 +1,1389 @@
+-- $Name: Проходная$
+allocator["objects"][1] = allocator:get("allocator[\"objects\"][1]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][1]", allocator["objects"][1])
+allocator["objects"][2] = allocator:get("allocator[\"objects\"][2]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][2]", allocator["objects"][2])
+allocator["objects"][3] = allocator:get("allocator[\"objects\"][3]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][3]", allocator["objects"][3])
+allocator["objects"][4] = allocator:get("allocator[\"objects\"][4]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][4]", allocator["objects"][4])
+allocator["objects"][5] = allocator:get("allocator[\"objects\"][5]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][5]", allocator["objects"][5])
+allocator["objects"][6] = allocator:get("allocator[\"objects\"][6]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][6]", allocator["objects"][6])
+allocator["objects"][7] = allocator:get("allocator[\"objects\"][7]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][7]", allocator["objects"][7])
+allocator["objects"][8] = allocator:get("allocator[\"objects\"][8]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][8]", allocator["objects"][8])
+allocator["objects"][9] = allocator:get("allocator[\"objects\"][9]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][9]", allocator["objects"][9])
+allocator["objects"][10] = allocator:get("allocator[\"objects\"][10]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][10]", allocator["objects"][10])
+allocator["objects"][11] = allocator:get("allocator[\"objects\"][11]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][11]", allocator["objects"][11])
+allocator["objects"][12] = allocator:get("allocator[\"objects\"][12]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][12]", allocator["objects"][12])
+allocator["objects"][13] = allocator:get("allocator[\"objects\"][13]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][13]", allocator["objects"][13])
+allocator["objects"][14] = allocator:get("allocator[\"objects\"][14]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][14]", allocator["objects"][14])
+allocator["objects"][15] = allocator:get("allocator[\"objects\"][15]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][15]", allocator["objects"][15])
+allocator["objects"][16] = allocator:get("allocator[\"objects\"][16]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][16]", allocator["objects"][16])
+allocator["objects"][17] = allocator:get("allocator[\"objects\"][17]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][17]", allocator["objects"][17])
+allocator["objects"][18] = allocator:get("allocator[\"objects\"][18]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][18]", allocator["objects"][18])
+allocator["objects"][19] = allocator:get("allocator[\"objects\"][19]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][19]", allocator["objects"][19])
+allocator["objects"][20] = allocator:get("allocator[\"objects\"][20]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][20]", allocator["objects"][20])
+allocator["objects"][21] = allocator:get("allocator[\"objects\"][21]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][21]", allocator["objects"][21])
+allocator["objects"][22] = allocator:get("allocator[\"objects\"][22]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][22]", allocator["objects"][22])
+allocator["objects"][23] = allocator:get("allocator[\"objects\"][23]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][23]", allocator["objects"][23])
+allocator["objects"][24] = allocator:get("allocator[\"objects\"][24]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][24]", allocator["objects"][24])
+allocator["objects"][25] = allocator:get("allocator[\"objects\"][25]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][25]", allocator["objects"][25])
+allocator["objects"][26] = allocator:get("allocator[\"objects\"][26]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][26]", allocator["objects"][26])
+allocator["objects"][27] = allocator:get("allocator[\"objects\"][27]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][27]", allocator["objects"][27])
+allocator["objects"][28] = allocator:get("allocator[\"objects\"][28]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][28]", allocator["objects"][28])
+allocator["objects"][29] = allocator:get("allocator[\"objects\"][29]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][29]", allocator["objects"][29])
+allocator["objects"][30] = allocator:get("allocator[\"objects\"][30]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][30]", allocator["objects"][30])
+allocator["objects"][31] = allocator:get("allocator[\"objects\"][31]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][31]", allocator["objects"][31])
+allocator["objects"][32] = allocator:get("allocator[\"objects\"][32]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][32]", allocator["objects"][32])
+allocator["objects"][33] = allocator:get("allocator[\"objects\"][33]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][33]", allocator["objects"][33])
+allocator["objects"][34] = allocator:get("allocator[\"objects\"][34]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][34]", allocator["objects"][34])
+allocator["objects"][35] = allocator:get("allocator[\"objects\"][35]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][35]", allocator["objects"][35])
+allocator["objects"][36] = allocator:get("allocator[\"objects\"][36]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][36]", allocator["objects"][36])
+allocator["objects"][37] = allocator:get("allocator[\"objects\"][37]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][37]", allocator["objects"][37])
+allocator["objects"][38] = allocator:get("allocator[\"objects\"][38]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][38]", allocator["objects"][38])
+allocator["objects"][39] = allocator:get("allocator[\"objects\"][39]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][39]", allocator["objects"][39])
+allocator["objects"][40] = allocator:get("allocator[\"objects\"][40]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][40]", allocator["objects"][40])
+allocator["objects"][41] = allocator:get("allocator[\"objects\"][41]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][41]", allocator["objects"][41])
+allocator["objects"][42] = allocator:get("allocator[\"objects\"][42]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][42]", allocator["objects"][42])
+allocator["objects"][43] = allocator:get("allocator[\"objects\"][43]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][43]", allocator["objects"][43])
+allocator["objects"][44] = allocator:get("allocator[\"objects\"][44]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][44]", allocator["objects"][44])
+allocator["objects"][45] = allocator:get("allocator[\"objects\"][45]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][45]", allocator["objects"][45])
+allocator["objects"][46] = allocator:get("allocator[\"objects\"][46]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][46]", allocator["objects"][46])
+allocator["objects"][47] = allocator:get("allocator[\"objects\"][47]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][47]", allocator["objects"][47])
+allocator["objects"][48] = allocator:get("allocator[\"objects\"][48]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][48]", allocator["objects"][48])
+allocator["objects"][49] = allocator:get("allocator[\"objects\"][49]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][49]", allocator["objects"][49])
+allocator["objects"][50] = allocator:get("allocator[\"objects\"][50]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][50]", allocator["objects"][50])
+allocator["objects"][51] = allocator:get("allocator[\"objects\"][51]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][51]", allocator["objects"][51])
+allocator["objects"][52] = allocator:get("allocator[\"objects\"][52]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][52]", allocator["objects"][52])
+allocator["objects"][53] = allocator:get("allocator[\"objects\"][53]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][53]", allocator["objects"][53])
+allocator["objects"][54] = allocator:get("allocator[\"objects\"][54]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][54]", allocator["objects"][54])
+allocator["objects"][55] = allocator:get("allocator[\"objects\"][55]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][55]", allocator["objects"][55])
+allocator["objects"][56] = allocator:get("allocator[\"objects\"][56]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][56]", allocator["objects"][56])
+allocator["objects"][57] = allocator:get("allocator[\"objects\"][57]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][57]", allocator["objects"][57])
+allocator["objects"][58] = allocator:get("allocator[\"objects\"][58]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][58]", allocator["objects"][58])
+allocator["objects"][59] = allocator:get("allocator[\"objects\"][59]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][59]", allocator["objects"][59])
+allocator["objects"][60] = allocator:get("allocator[\"objects\"][60]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][60]", allocator["objects"][60])
+allocator["objects"][61] = allocator:get("allocator[\"objects\"][61]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][61]", allocator["objects"][61])
+allocator["objects"][62] = allocator:get("allocator[\"objects\"][62]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][62]", allocator["objects"][62])
+allocator["objects"][63] = allocator:get("allocator[\"objects\"][63]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][63]", allocator["objects"][63])
+allocator["objects"][64] = allocator:get("allocator[\"objects\"][64]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][64]", allocator["objects"][64])
+allocator["objects"][65] = allocator:get("allocator[\"objects\"][65]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][65]", allocator["objects"][65])
+allocator["objects"][66] = allocator:get("allocator[\"objects\"][66]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][66]", allocator["objects"][66])
+allocator["objects"][67] = allocator:get("allocator[\"objects\"][67]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][67]", allocator["objects"][67])
+allocator["objects"][68] = allocator:get("allocator[\"objects\"][68]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][68]", allocator["objects"][68])
+allocator["objects"][69] = allocator:get("allocator[\"objects\"][69]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][69]", allocator["objects"][69])
+allocator["objects"][70] = allocator:get("allocator[\"objects\"][70]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][70]", allocator["objects"][70])
+allocator["objects"][71] = allocator:get("allocator[\"objects\"][71]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][71]", allocator["objects"][71])
+allocator["objects"][72] = allocator:get("allocator[\"objects\"][72]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][72]", allocator["objects"][72])
+allocator["objects"][73] = allocator:get("allocator[\"objects\"][73]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][73]", allocator["objects"][73])
+allocator["objects"][74] = allocator:get("allocator[\"objects\"][74]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][74]", allocator["objects"][74])
+allocator["objects"][75] = allocator:get("allocator[\"objects\"][75]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][75]", allocator["objects"][75])
+allocator["objects"][76] = allocator:get("allocator[\"objects\"][76]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][76]", allocator["objects"][76])
+allocator["objects"][77] = allocator:get("allocator[\"objects\"][77]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][77]", allocator["objects"][77])
+allocator["objects"][78] = allocator:get("allocator[\"objects\"][78]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][78]", allocator["objects"][78])
+allocator["objects"][79] = allocator:get("allocator[\"objects\"][79]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][79]", allocator["objects"][79])
+allocator["objects"][80] = allocator:get("allocator[\"objects\"][80]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][80]", allocator["objects"][80])
+allocator["objects"][81] = allocator:get("allocator[\"objects\"][81]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][81]", allocator["objects"][81])
+allocator["objects"][82] = allocator:get("allocator[\"objects\"][82]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][82]", allocator["objects"][82])
+allocator["objects"][83] = allocator:get("allocator[\"objects\"][83]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][83]", allocator["objects"][83])
+allocator["objects"][84] = allocator:get("allocator[\"objects\"][84]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][84]", allocator["objects"][84])
+allocator["objects"][85] = allocator:get("allocator[\"objects\"][85]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][85]", allocator["objects"][85])
+allocator["objects"][86] = allocator:get("allocator[\"objects\"][86]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][86]", allocator["objects"][86])
+allocator["objects"][87] = allocator:get("allocator[\"objects\"][87]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][87]", allocator["objects"][87])
+allocator["objects"][88] = allocator:get("allocator[\"objects\"][88]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][88]", allocator["objects"][88])
+allocator["objects"][89] = allocator:get("allocator[\"objects\"][89]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][89]", allocator["objects"][89])
+allocator["objects"][90] = allocator:get("allocator[\"objects\"][90]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][90]", allocator["objects"][90])
+allocator["objects"][91] = allocator:get("allocator[\"objects\"][91]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][91]", allocator["objects"][91])
+allocator["objects"][92] = allocator:get("allocator[\"objects\"][92]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][92]", allocator["objects"][92])
+allocator["objects"][93] = allocator:get("allocator[\"objects\"][93]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][93]", allocator["objects"][93])
+allocator["objects"][94] = allocator:get("allocator[\"objects\"][94]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][94]", allocator["objects"][94])
+allocator["objects"][95] = allocator:get("allocator[\"objects\"][95]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][95]", allocator["objects"][95])
+allocator["objects"][96] = allocator:get("allocator[\"objects\"][96]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][96]", allocator["objects"][96])
+allocator["objects"][97] = allocator:get("allocator[\"objects\"][97]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][97]", allocator["objects"][97])
+allocator["objects"][98] = allocator:get("allocator[\"objects\"][98]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][98]", allocator["objects"][98])
+allocator["objects"][99] = allocator:get("allocator[\"objects\"][99]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][99]", allocator["objects"][99])
+allocator["objects"][100] = allocator:get("allocator[\"objects\"][100]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][100]", allocator["objects"][100])
+allocator["objects"][101] = allocator:get("allocator[\"objects\"][101]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][101]", allocator["objects"][101])
+allocator["objects"][102] = allocator:get("allocator[\"objects\"][102]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][102]", allocator["objects"][102])
+allocator["objects"][103] = allocator:get("allocator[\"objects\"][103]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][103]", allocator["objects"][103])
+allocator["objects"][104] = allocator:get("allocator[\"objects\"][104]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][104]", allocator["objects"][104])
+allocator["objects"][105] = allocator:get("allocator[\"objects\"][105]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][105]", allocator["objects"][105])
+allocator["objects"][106] = allocator:get("allocator[\"objects\"][106]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][106]", allocator["objects"][106])
+allocator["objects"][107] = allocator:get("allocator[\"objects\"][107]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][107]", allocator["objects"][107])
+allocator["objects"][108] = allocator:get("allocator[\"objects\"][108]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][108]", allocator["objects"][108])
+allocator["objects"][109] = map_bunker
+allocator["objects"][110] = allocator:get("allocator[\"objects\"][110]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][110]", allocator["objects"][110])
+allocator["objects"][111] = allocator:get("allocator[\"objects\"][111]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][111]", allocator["objects"][111])
+allocator["objects"][112] = allocator:get("allocator[\"objects\"][112]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][112]", allocator["objects"][112])
+allocator["objects"][113] = allocator:get("allocator[\"objects\"][113]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][113]", allocator["objects"][113])
+allocator["objects"][114] = allocator:get("allocator[\"objects\"][114]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][114]", allocator["objects"][114])
+allocator["objects"][115] = allocator:get("allocator[\"objects\"][115]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][115]", allocator["objects"][115])
+allocator["objects"][116] = allocator:get("allocator[\"objects\"][116]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][116]", allocator["objects"][116])
+allocator["objects"][117] = allocator:get("allocator[\"objects\"][117]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][117]", allocator["objects"][117])
+allocator["objects"][118] = allocator:get("allocator[\"objects\"][118]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][118]", allocator["objects"][118])
+allocator["objects"][119] = allocator:get("allocator[\"objects\"][119]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][119]", allocator["objects"][119])
+allocator["objects"][120] = allocator:get("allocator[\"objects\"][120]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][120]", allocator["objects"][120])
+allocator["objects"][121] = allocator:get("allocator[\"objects\"][121]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][121]", allocator["objects"][121])
+allocator["objects"][122] = allocator:get("allocator[\"objects\"][122]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][122]", allocator["objects"][122])
+allocator["objects"][123] = allocator:get("allocator[\"objects\"][123]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][123]", allocator["objects"][123])
+allocator["objects"][124] = allocator:get("allocator[\"objects\"][124]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][124]", allocator["objects"][124])
+allocator["objects"][125] = allocator:get("allocator[\"objects\"][125]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][125]", allocator["objects"][125])
+allocator["objects"][126] = allocator:get("allocator[\"objects\"][126]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][126]", allocator["objects"][126])
+allocator["objects"][127] = allocator:get("allocator[\"objects\"][127]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][127]", allocator["objects"][127])
+allocator["objects"][128] = allocator:get("allocator[\"objects\"][128]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][128]", allocator["objects"][128])
+allocator["objects"][129] = allocator:get("allocator[\"objects\"][129]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][129]", allocator["objects"][129])
+allocator["objects"][130] = allocator:get("allocator[\"objects\"][130]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][130]", allocator["objects"][130])
+allocator["objects"][131] = allocator:get("allocator[\"objects\"][131]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][131]", allocator["objects"][131])
+allocator["objects"][132] = allocator:get("allocator[\"objects\"][132]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][132]", allocator["objects"][132])
+allocator["objects"][133] = allocator:get("allocator[\"objects\"][133]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][133]", allocator["objects"][133])
+allocator["objects"][134] = allocator:get("allocator[\"objects\"][134]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][134]", allocator["objects"][134])
+allocator["objects"][135] = allocator:get("allocator[\"objects\"][135]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][135]", allocator["objects"][135])
+allocator["objects"][136] = allocator:get("allocator[\"objects\"][136]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][136]", allocator["objects"][136])
+allocator["objects"][137] = allocator:get("allocator[\"objects\"][137]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][137]", allocator["objects"][137])
+allocator["objects"][138] = allocator:get("allocator[\"objects\"][138]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][138]", allocator["objects"][138])
+allocator["objects"][139] = allocator:get("allocator[\"objects\"][139]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][139]", allocator["objects"][139])
+allocator["objects"][140] = allocator:get("allocator[\"objects\"][140]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][140]", allocator["objects"][140])
+allocator["objects"][141] = map_novgorod
+allocator["objects"][142] = allocator:get("allocator[\"objects\"][142]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][142]", allocator["objects"][142])
+allocator["objects"][143] = allocator:get("allocator[\"objects\"][143]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][143]", allocator["objects"][143])
+allocator["objects"][144] = allocator:get("allocator[\"objects\"][144]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][144]", allocator["objects"][144])
+allocator["objects"][145] = allocator:get("allocator[\"objects\"][145]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][145]", allocator["objects"][145])
+allocator["objects"][146] = allocator:get("allocator[\"objects\"][146]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][146]", allocator["objects"][146])
+allocator["objects"][147] = allocator:get("allocator[\"objects\"][147]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][147]", allocator["objects"][147])
+allocator["objects"][148] = allocator:get("allocator[\"objects\"][148]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][148]", allocator["objects"][148])
+allocator["objects"][149] = allocator:get("allocator[\"objects\"][149]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][149]", allocator["objects"][149])
+allocator["objects"][150] = allocator:get("allocator[\"objects\"][150]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][150]", allocator["objects"][150])
+allocator["objects"][151] = allocator:get("allocator[\"objects\"][151]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][151]", allocator["objects"][151])
+allocator["objects"][152] = allocator:get("allocator[\"objects\"][152]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][152]", allocator["objects"][152])
+allocator["objects"][153] = allocator:get("allocator[\"objects\"][153]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][153]", allocator["objects"][153])
+allocator["objects"][154] = allocator:get("allocator[\"objects\"][154]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][154]", allocator["objects"][154])
+allocator["objects"][155] = allocator:get("allocator[\"objects\"][155]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][155]", allocator["objects"][155])
+allocator["objects"][156] = allocator:get("allocator[\"objects\"][156]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][156]", allocator["objects"][156])
+allocator["objects"][157] = allocator:get("allocator[\"objects\"][157]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][157]", allocator["objects"][157])
+allocator["objects"][158] = allocator:get("allocator[\"objects\"][158]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][158]", allocator["objects"][158])
+allocator["objects"][159] = allocator:get("allocator[\"objects\"][159]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][159]", allocator["objects"][159])
+allocator["objects"][160] = allocator:get("allocator[\"objects\"][160]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][160]", allocator["objects"][160])
+allocator["objects"][161] = allocator:get("allocator[\"objects\"][161]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][161]", allocator["objects"][161])
+allocator["objects"][162] = allocator:get("allocator[\"objects\"][162]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][162]", allocator["objects"][162])
+allocator["objects"][163] = allocator:get("allocator[\"objects\"][163]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][163]", allocator["objects"][163])
+allocator["objects"][164] = allocator:get("allocator[\"objects\"][164]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][164]", allocator["objects"][164])
+allocator["objects"][165] = allocator:get("allocator[\"objects\"][165]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][165]", allocator["objects"][165])
+allocator["objects"][166] = allocator:get("allocator[\"objects\"][166]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][166]", allocator["objects"][166])
+allocator["objects"][167] = allocator:get("allocator[\"objects\"][167]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][167]", allocator["objects"][167])
+allocator["objects"][168] = allocator:get("allocator[\"objects\"][168]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][168]", allocator["objects"][168])
+allocator["objects"][169] = allocator:get("allocator[\"objects\"][169]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][169]", allocator["objects"][169])
+allocator["objects"][170] = allocator:get("allocator[\"objects\"][170]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][170]", allocator["objects"][170])
+allocator["objects"][171] = allocator:get("allocator[\"objects\"][171]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][171]", allocator["objects"][171])
+allocator["objects"][172] = allocator:get("allocator[\"objects\"][172]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][172]", allocator["objects"][172])
+allocator["objects"][173] = allocator:get("allocator[\"objects\"][173]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][173]", allocator["objects"][173])
+allocator["objects"][174] = allocator:get("allocator[\"objects\"][174]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][174]", allocator["objects"][174])
+allocator["objects"][175] = allocator:get("allocator[\"objects\"][175]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][175]", allocator["objects"][175])
+allocator["objects"][176] = allocator:get("allocator[\"objects\"][176]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][176]", allocator["objects"][176])
+allocator["objects"][177] = allocator:get("allocator[\"objects\"][177]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][177]", allocator["objects"][177])
+allocator["objects"][178] = allocator:get("allocator[\"objects\"][178]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][178]", allocator["objects"][178])
+allocator["objects"][179] = allocator:get("allocator[\"objects\"][179]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][179]", allocator["objects"][179])
+allocator["objects"][180] = allocator:get("allocator[\"objects\"][180]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][180]", allocator["objects"][180])
+allocator["objects"][181] = allocator:get("allocator[\"objects\"][181]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][181]", allocator["objects"][181])
+allocator["objects"][182] = allocator:get("allocator[\"objects\"][182]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][182]", allocator["objects"][182])
+allocator["objects"][183] = allocator:get("allocator[\"objects\"][183]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][183]", allocator["objects"][183])
+allocator["objects"][184] = allocator:get("allocator[\"objects\"][184]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][184]", allocator["objects"][184])
+allocator["objects"][185] = allocator:get("allocator[\"objects\"][185]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][185]", allocator["objects"][185])
+allocator["objects"][186] = allocator:get("allocator[\"objects\"][186]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][186]", allocator["objects"][186])
+allocator["objects"][187] = allocator:get("allocator[\"objects\"][187]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][187]", allocator["objects"][187])
+allocator["objects"][188] = allocator:get("allocator[\"objects\"][188]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][188]", allocator["objects"][188])
+allocator["objects"][189] = allocator:get("allocator[\"objects\"][189]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][189]", allocator["objects"][189])
+allocator["objects"][190] = allocator:get("allocator[\"objects\"][190]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][190]", allocator["objects"][190])
+allocator["objects"][191] = allocator:get("allocator[\"objects\"][191]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][191]", allocator["objects"][191])
+allocator["objects"][192] = allocator:get("allocator[\"objects\"][192]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][192]", allocator["objects"][192])
+allocator["objects"][193] = allocator:get("allocator[\"objects\"][193]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][193]", allocator["objects"][193])
+allocator["objects"][194] = allocator:get("allocator[\"objects\"][194]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][194]", allocator["objects"][194])
+allocator["objects"][195] = allocator:get("allocator[\"objects\"][195]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][195]", allocator["objects"][195])
+allocator["objects"][196] = allocator:get("allocator[\"objects\"][196]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][196]", allocator["objects"][196])
+allocator["objects"][197] = allocator:get("allocator[\"objects\"][197]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][197]", allocator["objects"][197])
+allocator["objects"][198] = allocator:get("allocator[\"objects\"][198]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][198]", allocator["objects"][198])
+allocator["objects"][199] = allocator:get("allocator[\"objects\"][199]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][199]", allocator["objects"][199])
+allocator["objects"][200] = allocator:get("allocator[\"objects\"][200]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][200]", allocator["objects"][200])
+allocator["objects"][201] = allocator:get("allocator[\"objects\"][201]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][201]", allocator["objects"][201])
+allocator["objects"][202] = allocator:get("allocator[\"objects\"][202]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][202]", allocator["objects"][202])
+allocator["objects"][203] = allocator:get("allocator[\"objects\"][203]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][203]", allocator["objects"][203])
+allocator["objects"][204] = allocator:get("allocator[\"objects\"][204]", "myconstructor()")
+stead.check_object("allocator[\"objects\"][204]", allocator["objects"][204])
+allocator["objects"][205] = allocator:get("allocator[\"objects\"][205]", "q1_button_constructor(1)")
+stead.check_object("allocator[\"objects\"][205]", allocator["objects"][205])
+allocator["objects"][205]["_disabled"] = false
+allocator["objects"][206] = allocator:get("allocator[\"objects\"][206]", "q1_button_constructor(2)")
+stead.check_object("allocator[\"objects\"][206]", allocator["objects"][206])
+allocator["objects"][206]["_disabled"] = true
+allocator["objects"][207] = allocator:get("allocator[\"objects\"][207]", "q1_button_constructor(3)")
+stead.check_object("allocator[\"objects\"][207]", allocator["objects"][207])
+allocator["objects"][207]["_disabled"] = true
+allocator["objects"][208] = allocator:get("allocator[\"objects\"][208]", "q1_button_constructor(4)")
+stead.check_object("allocator[\"objects\"][208]", allocator["objects"][208])
+allocator["objects"][208]["_disabled"] = true
+allocator["objects"][209] = allocator:get("allocator[\"objects\"][209]", "q1_button_constructor(5)")
+stead.check_object("allocator[\"objects\"][209]", allocator["objects"][209])
+allocator["objects"][209]["_disabled"] = true
+allocator["objects"][210] = allocator:get("allocator[\"objects\"][210]", "q1_button_constructor(6)")
+stead.check_object("allocator[\"objects\"][210]", allocator["objects"][210])
+allocator["objects"][210]["_disabled"] = true
+allocator["objects"][211] = allocator:get("allocator[\"objects\"][211]", "q1_button_constructor(7)")
+stead.check_object("allocator[\"objects\"][211]", allocator["objects"][211])
+allocator["objects"][211]["_disabled"] = true
+allocator["objects"][212] = allocator:get("allocator[\"objects\"][212]", "q1_button_constructor(8)")
+stead.check_object("allocator[\"objects\"][212]", allocator["objects"][212])
+allocator["objects"][212]["_disabled"] = true
+allocator["objects"][213] = allocator:get("allocator[\"objects\"][213]", "q1_button_constructor(9)")
+stead.check_object("allocator[\"objects\"][213]", allocator["objects"][213])
+allocator["objects"][213]["_disabled"] = true
+allocator["objects"][214] = allocator:get("allocator[\"objects\"][214]", "q1_button_constructor(10)")
+stead.check_object("allocator[\"objects\"][214]", allocator["objects"][214])
+allocator["objects"][214]["_disabled"] = true
+allocator["objects"][215] = allocator:get("allocator[\"objects\"][215]", "q1_button_constructor(11)")
+stead.check_object("allocator[\"objects\"][215]", allocator["objects"][215])
+allocator["objects"][215]["_disabled"] = true
+allocator["objects"][216] = allocator:get("allocator[\"objects\"][216]", "q1_button_constructor(12)")
+stead.check_object("allocator[\"objects\"][216]", allocator["objects"][216])
+allocator["objects"][216]["_disabled"] = true
+allocator["objects"][217] = allocator:get("allocator[\"objects\"][217]", "q1_button_constructor(13)")
+stead.check_object("allocator[\"objects\"][217]", allocator["objects"][217])
+allocator["objects"][217]["_disabled"] = true
+allocator["objects"][218] = allocator:get("allocator[\"objects\"][218]", "q1_button_constructor(14)")
+stead.check_object("allocator[\"objects\"][218]", allocator["objects"][218])
+allocator["objects"][218]["_disabled"] = true
+allocator["objects"][219] = allocator:get("allocator[\"objects\"][219]", "q1_button_constructor(15)")
+stead.check_object("allocator[\"objects\"][219]", allocator["objects"][219])
+allocator["objects"][219]["_disabled"] = true
+allocator["objects"][220] = allocator:get("allocator[\"objects\"][220]", "q1_button_constructor(16)")
+stead.check_object("allocator[\"objects\"][220]", allocator["objects"][220])
+allocator["objects"][220]["_disabled"] = false
+allocator["objects"][221] = allocator:get("allocator[\"objects\"][221]", "q1_button_constructor(17)")
+stead.check_object("allocator[\"objects\"][221]", allocator["objects"][221])
+allocator["objects"][221]["_disabled"] = true
+allocator["objects"][222] = allocator:get("allocator[\"objects\"][222]", "q1_button_constructor(18)")
+stead.check_object("allocator[\"objects\"][222]", allocator["objects"][222])
+allocator["objects"][222]["_disabled"] = true
+allocator["objects"][223] = allocator:get("allocator[\"objects\"][223]", "q1_button_constructor(19)")
+stead.check_object("allocator[\"objects\"][223]", allocator["objects"][223])
+allocator["objects"][223]["_disabled"] = true
+allocator["objects"][224] = allocator:get("allocator[\"objects\"][224]", "q1_button_constructor(20)")
+stead.check_object("allocator[\"objects\"][224]", allocator["objects"][224])
+allocator["objects"][224]["_disabled"] = true
+allocator["objects"][225] = allocator:get("allocator[\"objects\"][225]", "q1_button_constructor(21)")
+stead.check_object("allocator[\"objects\"][225]", allocator["objects"][225])
+allocator["objects"][225]["_disabled"] = true
+allocator["objects"][226] = allocator:get("allocator[\"objects\"][226]", "q1_button_constructor(22)")
+stead.check_object("allocator[\"objects\"][226]", allocator["objects"][226])
+allocator["objects"][226]["_disabled"] = true
+allocator["objects"][227] = allocator:get("allocator[\"objects\"][227]", "q1_button_constructor(23)")
+stead.check_object("allocator[\"objects\"][227]", allocator["objects"][227])
+allocator["objects"][227]["_disabled"] = true
+allocator["objects"][228] = allocator:get("allocator[\"objects\"][228]", "q1_button_constructor(24)")
+stead.check_object("allocator[\"objects\"][228]", allocator["objects"][228])
+allocator["objects"][228]["_disabled"] = true
+allocator["objects"][229] = allocator:get("allocator[\"objects\"][229]", "q1_button_constructor(25)")
+stead.check_object("allocator[\"objects\"][229]", allocator["objects"][229])
+allocator["objects"][229]["_disabled"] = true
+allocator["objects"][230] = allocator:get("allocator[\"objects\"][230]", "q1_button_constructor(26)")
+stead.check_object("allocator[\"objects\"][230]", allocator["objects"][230])
+allocator["objects"][230]["_disabled"] = true
+allocator["objects"][231] = allocator:get("allocator[\"objects\"][231]", "q1_button_constructor(27)")
+stead.check_object("allocator[\"objects\"][231]", allocator["objects"][231])
+allocator["objects"][231]["_disabled"] = true
+allocator["objects"][232] = allocator:get("allocator[\"objects\"][232]", "q1_button_constructor(28)")
+stead.check_object("allocator[\"objects\"][232]", allocator["objects"][232])
+allocator["objects"][232]["_disabled"] = true
+allocator["objects"][233] = allocator:get("allocator[\"objects\"][233]", "q1_button_constructor(29)")
+stead.check_object("allocator[\"objects\"][233]", allocator["objects"][233])
+allocator["objects"][233]["_disabled"] = false
+allocator["objects"][234] = allocator:get("allocator[\"objects\"][234]", "q1_button_constructor(30)")
+stead.check_object("allocator[\"objects\"][234]", allocator["objects"][234])
+allocator["objects"][234]["_disabled"] = true
+allocator["objects"][235] = allocator:get("allocator[\"objects\"][235]", "q1_button_constructor(31)")
+stead.check_object("allocator[\"objects\"][235]", allocator["objects"][235])
+allocator["objects"][235]["_disabled"] = false
+allocator["objects"][236] = allocator:get("allocator[\"objects\"][236]", "q1_button_constructor(32)")
+stead.check_object("allocator[\"objects\"][236]", allocator["objects"][236])
+allocator["objects"][236]["_disabled"] = true
+allocator["objects"][237] = allocator:get("allocator[\"objects\"][237]", "q1_button_constructor(33)")
+stead.check_object("allocator[\"objects\"][237]", allocator["objects"][237])
+allocator["objects"][237]["_disabled"] = true
+allocator["objects"][238] = allocator:get("allocator[\"objects\"][238]", "q1_button_constructor(34)")
+stead.check_object("allocator[\"objects\"][238]", allocator["objects"][238])
+allocator["objects"][238]["_disabled"] = true
+allocator["objects"][239] = allocator:get("allocator[\"objects\"][239]", "q1_button_constructor(35)")
+stead.check_object("allocator[\"objects\"][239]", allocator["objects"][239])
+allocator["objects"][239]["_disabled"] = true
+allocator["objects"][240] = allocator:get("allocator[\"objects\"][240]", "q1_button_constructor(36)")
+stead.check_object("allocator[\"objects\"][240]", allocator["objects"][240])
+allocator["objects"][240]["_disabled"] = true
+allocator["objects"][241] = allocator:get("allocator[\"objects\"][241]", "q1_button_constructor(37)")
+stead.check_object("allocator[\"objects\"][241]", allocator["objects"][241])
+allocator["objects"][241]["_disabled"] = true
+allocator["objects"][242] = allocator:get("allocator[\"objects\"][242]", "q1_button_constructor(38)")
+stead.check_object("allocator[\"objects\"][242]", allocator["objects"][242])
+allocator["objects"][242]["_disabled"] = true
+allocator["objects"][243] = allocator:get("allocator[\"objects\"][243]", "q1_button_constructor(39)")
+stead.check_object("allocator[\"objects\"][243]", allocator["objects"][243])
+allocator["objects"][243]["_disabled"] = true
+allocator["objects"][244] = allocator:get("allocator[\"objects\"][244]", "q1_button_constructor(40)")
+stead.check_object("allocator[\"objects\"][244]", allocator["objects"][244])
+allocator["objects"][244]["_disabled"] = true
+allocator["objects"][245] = allocator:get("allocator[\"objects\"][245]", "q1_button_constructor(41)")
+stead.check_object("allocator[\"objects\"][245]", allocator["objects"][245])
+allocator["objects"][245]["_disabled"] = true
+allocator["objects"][246] = allocator:get("allocator[\"objects\"][246]", "q1_button_constructor(42)")
+stead.check_object("allocator[\"objects\"][246]", allocator["objects"][246])
+allocator["objects"][246]["_disabled"] = true
+allocator["objects"][247] = allocator:get("allocator[\"objects\"][247]", "q1_button_constructor(43)")
+stead.check_object("allocator[\"objects\"][247]", allocator["objects"][247])
+allocator["objects"][247]["_disabled"] = true
+allocator["objects"][248] = allocator:get("allocator[\"objects\"][248]", "q1_button_constructor(44)")
+stead.check_object("allocator[\"objects\"][248]", allocator["objects"][248])
+allocator["objects"][248]["_disabled"] = true
+allocator["objects"][249] = allocator:get("allocator[\"objects\"][249]", "q1_button_constructor(45)")
+stead.check_object("allocator[\"objects\"][249]", allocator["objects"][249])
+allocator["objects"][249]["_disabled"] = true
+allocator["objects"][250] = allocator:get("allocator[\"objects\"][250]", "q1_button_constructor(46)")
+stead.check_object("allocator[\"objects\"][250]", allocator["objects"][250])
+allocator["objects"][250]["_disabled"] = true
+allocator["objects"][251] = allocator:get("allocator[\"objects\"][251]", "q1_button_constructor(47)")
+stead.check_object("allocator[\"objects\"][251]", allocator["objects"][251])
+allocator["objects"][251]["_disabled"] = true
+allocator["objects"][252] = allocator:get("allocator[\"objects\"][252]", "q1_button_constructor(48)")
+stead.check_object("allocator[\"objects\"][252]", allocator["objects"][252])
+allocator["objects"][252]["_disabled"] = true
+allocator["objects"][253] = allocator:get("allocator[\"objects\"][253]", "q1_button_constructor(49)")
+stead.check_object("allocator[\"objects\"][253]", allocator["objects"][253])
+allocator["objects"][253]["_disabled"] = true
+allocator["objects"][254] = allocator:get("allocator[\"objects\"][254]", "q1_button_constructor(50)")
+stead.check_object("allocator[\"objects\"][254]", allocator["objects"][254])
+allocator["objects"][254]["_disabled"] = true
+allocator["objects"][255] = allocator:get("allocator[\"objects\"][255]", "q1_button_constructor(51)")
+stead.check_object("allocator[\"objects\"][255]", allocator["objects"][255])
+allocator["objects"][255]["_disabled"] = true
+allocator["objects"][256] = allocator:get("allocator[\"objects\"][256]", "q1_button_constructor(52)")
+stead.check_object("allocator[\"objects\"][256]", allocator["objects"][256])
+allocator["objects"][256]["_disabled"] = true
+allocator["objects"][257] = allocator:get("allocator[\"objects\"][257]", "q1_button_constructor(53)")
+stead.check_object("allocator[\"objects\"][257]", allocator["objects"][257])
+allocator["objects"][257]["_disabled"] = true
+allocator["objects"][258] = allocator:get("allocator[\"objects\"][258]", "q1_button_constructor(54)")
+stead.check_object("allocator[\"objects\"][258]", allocator["objects"][258])
+allocator["objects"][258]["_disabled"] = true
+allocator["objects"][259] = allocator:get("allocator[\"objects\"][259]", "q1_button_constructor(55)")
+stead.check_object("allocator[\"objects\"][259]", allocator["objects"][259])
+allocator["objects"][259]["_disabled"] = true
+allocator["objects"][260] = allocator:get("allocator[\"objects\"][260]", "q1_button_constructor(56)")
+stead.check_object("allocator[\"objects\"][260]", allocator["objects"][260])
+allocator["objects"][260]["_disabled"] = true
+allocator["objects"][261] = allocator:get("allocator[\"objects\"][261]", "q1_button_constructor(57)")
+stead.check_object("allocator[\"objects\"][261]", allocator["objects"][261])
+allocator["objects"][261]["_disabled"] = false
+allocator["objects"][262] = allocator:get("allocator[\"objects\"][262]", "q1_button_constructor(58)")
+stead.check_object("allocator[\"objects\"][262]", allocator["objects"][262])
+allocator["objects"][262]["_disabled"] = true
+allocator["objects"][263] = allocator:get("allocator[\"objects\"][263]", "q1_button_constructor(59)")
+stead.check_object("allocator[\"objects\"][263]", allocator["objects"][263])
+allocator["objects"][263]["_disabled"] = true
+allocator["objects"][264] = allocator:get("allocator[\"objects\"][264]", "q1_button_constructor(60)")
+stead.check_object("allocator[\"objects\"][264]", allocator["objects"][264])
+allocator["objects"][264]["_disabled"] = true
+allocator["objects"][265] = allocator:get("allocator[\"objects\"][265]", "q1_button_constructor(61)")
+stead.check_object("allocator[\"objects\"][265]", allocator["objects"][265])
+allocator["objects"][265]["_disabled"] = true
+allocator["objects"][266] = allocator:get("allocator[\"objects\"][266]", "q1_button_constructor(62)")
+stead.check_object("allocator[\"objects\"][266]", allocator["objects"][266])
+allocator["objects"][266]["_disabled"] = true
+allocator["objects"][267] = allocator:get("allocator[\"objects\"][267]", "q1_button_constructor(63)")
+stead.check_object("allocator[\"objects\"][267]", allocator["objects"][267])
+allocator["objects"][267]["_disabled"] = true
+allocator["objects"][268] = allocator:get("allocator[\"objects\"][268]", "q1_button_constructor(64)")
+stead.check_object("allocator[\"objects\"][268]", allocator["objects"][268])
+allocator["objects"][268]["_disabled"] = false
+allocator["objects"][269] = allocator:get("allocator[\"objects\"][269]", "q1_button_constructor(65)")
+stead.check_object("allocator[\"objects\"][269]", allocator["objects"][269])
+allocator["objects"][269]["_disabled"] = true
+allocator["objects"][270] = allocator:get("allocator[\"objects\"][270]", "q1_button_constructor(66)")
+stead.check_object("allocator[\"objects\"][270]", allocator["objects"][270])
+allocator["objects"][270]["_disabled"] = true
+allocator["objects"][271] = allocator:get("allocator[\"objects\"][271]", "q1_button_constructor(67)")
+stead.check_object("allocator[\"objects\"][271]", allocator["objects"][271])
+allocator["objects"][271]["_disabled"] = false
+allocator["objects"][272] = allocator:get("allocator[\"objects\"][272]", "q1_button_constructor(68)")
+stead.check_object("allocator[\"objects\"][272]", allocator["objects"][272])
+allocator["objects"][272]["_disabled"] = false
+allocator["objects"][273] = allocator:get("allocator[\"objects\"][273]", "q1_button_constructor(69)")
+stead.check_object("allocator[\"objects\"][273]", allocator["objects"][273])
+allocator["objects"][273]["_disabled"] = true
+allocator["objects"][274] = allocator:get("allocator[\"objects\"][274]", "q1_button_constructor(70)")
+stead.check_object("allocator[\"objects\"][274]", allocator["objects"][274])
+allocator["objects"][274]["_disabled"] = true
+allocator["objects"][275] = allocator:get("allocator[\"objects\"][275]", "q1_button_constructor(71)")
+stead.check_object("allocator[\"objects\"][275]", allocator["objects"][275])
+allocator["objects"][275]["_disabled"] = true
+allocator["objects"][276] = allocator:get("allocator[\"objects\"][276]", "q1_button_constructor(72)")
+stead.check_object("allocator[\"objects\"][276]", allocator["objects"][276])
+allocator["objects"][276]["_disabled"] = true
+allocator["objects"][277] = allocator:get("allocator[\"objects\"][277]", "q1_button_constructor(73)")
+stead.check_object("allocator[\"objects\"][277]", allocator["objects"][277])
+allocator["objects"][277]["_disabled"] = true
+allocator["objects"][278] = allocator:get("allocator[\"objects\"][278]", "q1_button_constructor(74)")
+stead.check_object("allocator[\"objects\"][278]", allocator["objects"][278])
+allocator["objects"][278]["_disabled"] = true
+allocator["objects"][279] = allocator:get("allocator[\"objects\"][279]", "q1_button_constructor(75)")
+stead.check_object("allocator[\"objects\"][279]", allocator["objects"][279])
+allocator["objects"][279]["_disabled"] = true
+allocator["objects"][280] = allocator:get("allocator[\"objects\"][280]", "q1_button_constructor(76)")
+stead.check_object("allocator[\"objects\"][280]", allocator["objects"][280])
+allocator["objects"][280]["_disabled"] = true
+allocator["objects"][281] = allocator:get("allocator[\"objects\"][281]", "q1_button_constructor(77)")
+stead.check_object("allocator[\"objects\"][281]", allocator["objects"][281])
+allocator["objects"][281]["_disabled"] = true
+allocator["objects"][282] = allocator:get("allocator[\"objects\"][282]", "q1_button_constructor(78)")
+stead.check_object("allocator[\"objects\"][282]", allocator["objects"][282])
+allocator["objects"][282]["_disabled"] = true
+allocator["objects"][283] = allocator:get("allocator[\"objects\"][283]", "q1_button_constructor(79)")
+stead.check_object("allocator[\"objects\"][283]", allocator["objects"][283])
+allocator["objects"][283]["_disabled"] = true
+allocator["objects"][284] = allocator:get("allocator[\"objects\"][284]", "q1_button_constructor(80)")
+stead.check_object("allocator[\"objects\"][284]", allocator["objects"][284])
+allocator["objects"][284]["_disabled"] = true
+allocator["objects"][285] = allocator:get("allocator[\"objects\"][285]", "q1_button_constructor(81)")
+stead.check_object("allocator[\"objects\"][285]", allocator["objects"][285])
+allocator["objects"][285]["_disabled"] = true
+allocator["objects"][286] = allocator:get("allocator[\"objects\"][286]", "q1_button_constructor(82)")
+stead.check_object("allocator[\"objects\"][286]", allocator["objects"][286])
+allocator["objects"][286]["_disabled"] = true
+allocator["objects"][287] = allocator:get("allocator[\"objects\"][287]", "q1_button_constructor(83)")
+stead.check_object("allocator[\"objects\"][287]", allocator["objects"][287])
+allocator["objects"][287]["_disabled"] = true
+allocator["objects"][288] = allocator:get("allocator[\"objects\"][288]", "q1_button_constructor(84)")
+stead.check_object("allocator[\"objects\"][288]", allocator["objects"][288])
+allocator["objects"][288]["_disabled"] = true
+allocator["objects"][289] = allocator:get("allocator[\"objects\"][289]", "q1_button_constructor(85)")
+stead.check_object("allocator[\"objects\"][289]", allocator["objects"][289])
+allocator["objects"][289]["_disabled"] = true
+allocator["objects"][290] = allocator:get("allocator[\"objects\"][290]", "q1_button_constructor(86)")
+stead.check_object("allocator[\"objects\"][290]", allocator["objects"][290])
+allocator["objects"][290]["_disabled"] = true
+allocator["objects"][291] = allocator:get("allocator[\"objects\"][291]", "q1_button_constructor(87)")
+stead.check_object("allocator[\"objects\"][291]", allocator["objects"][291])
+allocator["objects"][291]["_disabled"] = true
+allocator["objects"][292] = allocator:get("allocator[\"objects\"][292]", "q1_button_constructor(88)")
+stead.check_object("allocator[\"objects\"][292]", allocator["objects"][292])
+allocator["objects"][292]["_disabled"] = true
+allocator["objects"][293] = allocator:get("allocator[\"objects\"][293]", "q1_button_constructor(89)")
+stead.check_object("allocator[\"objects\"][293]", allocator["objects"][293])
+allocator["objects"][293]["_disabled"] = false
+allocator["objects"][294] = allocator:get("allocator[\"objects\"][294]", "q1_button_constructor(90)")
+stead.check_object("allocator[\"objects\"][294]", allocator["objects"][294])
+allocator["objects"][294]["_disabled"] = true
+allocator["objects"][295] = allocator:get("allocator[\"objects\"][295]", "q1_button_constructor(91)")
+stead.check_object("allocator[\"objects\"][295]", allocator["objects"][295])
+allocator["objects"][295]["_disabled"] = true
+allocator["objects"][296] = allocator:get("allocator[\"objects\"][296]", "q1_button_constructor(92)")
+stead.check_object("allocator[\"objects\"][296]", allocator["objects"][296])
+allocator["objects"][296]["_disabled"] = true
+allocator["objects"][297] = allocator:get("allocator[\"objects\"][297]", "q1_button_constructor(93)")
+stead.check_object("allocator[\"objects\"][297]", allocator["objects"][297])
+allocator["objects"][297]["_disabled"] = true
+allocator["objects"][298] = allocator:get("allocator[\"objects\"][298]", "q1_button_constructor(94)")
+stead.check_object("allocator[\"objects\"][298]", allocator["objects"][298])
+allocator["objects"][298]["_disabled"] = true
+allocator["objects"][299] = allocator:get("allocator[\"objects\"][299]", "q1_button_constructor(95)")
+stead.check_object("allocator[\"objects\"][299]", allocator["objects"][299])
+allocator["objects"][299]["_disabled"] = false
+allocator["objects"][300] = allocator:get("allocator[\"objects\"][300]", "q1_button_constructor(96)")
+stead.check_object("allocator[\"objects\"][300]", allocator["objects"][300])
+allocator["objects"][300]["_disabled"] = true
+allocator["objects"][301] = allocator:get("allocator[\"objects\"][301]", "q1_button_constructor(97)")
+stead.check_object("allocator[\"objects\"][301]", allocator["objects"][301])
+allocator["objects"][301]["_disabled"] = true
+allocator["objects"][302] = allocator:get("allocator[\"objects\"][302]", "q1_button_constructor(98)")
+stead.check_object("allocator[\"objects\"][302]", allocator["objects"][302])
+allocator["objects"][302]["_disabled"] = true
+allocator["objects"][303] = allocator:get("allocator[\"objects\"][303]", "q1_button_constructor(99)")
+stead.check_object("allocator[\"objects\"][303]", allocator["objects"][303])
+allocator["objects"][303]["_disabled"] = true
+allocator["objects"][304] = allocator:get("allocator[\"objects\"][304]", "q1_button_constructor(100)")
+stead.check_object("allocator[\"objects\"][304]", allocator["objects"][304])
+allocator["objects"][304]["_disabled"] = true
+allocator["objects"][305] = allocator:get("allocator[\"objects\"][305]", "q1_panel_constructor()")
+stead.check_object("allocator[\"objects\"][305]", allocator["objects"][305])
+allocator["objects"][305]["_disabled"] = true
+allocator["objects"][306] = allocator:get("allocator[\"objects\"][306]", "q1_panel_constructor()")
+stead.check_object("allocator[\"objects\"][306]", allocator["objects"][306])
+allocator["objects"][306]["_disabled"] = true
+allocator["objects"][307] = allocator:get("allocator[\"objects\"][307]", "q1_panel_constructor()")
+stead.check_object("allocator[\"objects\"][307]", allocator["objects"][307])
+allocator["objects"][307]["_disabled"] = true
+allocator["objects"][308] = allocator:get("allocator[\"objects\"][308]", "q1_panel_constructor()")
+stead.check_object("allocator[\"objects\"][308]", allocator["objects"][308])
+allocator["objects"][308]["_disabled"] = true
+allocator["objects"][309] = allocator:get("allocator[\"objects\"][309]", "q1_panel_constructor()")
+stead.check_object("allocator[\"objects\"][309]", allocator["objects"][309])
+allocator["objects"][309]["_disabled"] = true
+allocator["objects"][310] = allocator:get("allocator[\"objects\"][310]", "q1_panel_constructor()")
+stead.check_object("allocator[\"objects\"][310]", allocator["objects"][310])
+allocator["objects"][310]["_disabled"] = true
+pl.where = "q1_entrance";
+pl["obj"] = list({});
+pl["obj"][2] = status_relationship
+pl["obj"]["list_type"] = true
+pl["obj"][6] = status_map
+pl["obj"][7] = status_quest
+pl["obj"][5] = status_bunker
+pl["obj"]["__modified__"] = true
+pl["obj"][4] = confidenser
+pl["obj"][1] = debug_tool
+pl["obj"][3] = sympathiser
+q1_administration["__visited"] = 1
+q1_administration["obj"] = list({});
+q1_administration["obj"][2] = status_quest
+q1_administration["obj"]["list_type"] = true
+q1_administration["obj"]["__modified__"] = true
+q1_administration["obj"][1] = status_map
+q1_administration["__from__"]="q1_hall"
+q1_entrance["__visited"] = 2
+q1_entrance["obj"] = list({});
+q1_entrance["obj"][1] = q1_console_1
+q1_entrance["obj"][2] = allocator["objects"][205]
+q1_entrance["obj"][3] = allocator["objects"][206]
+q1_entrance["obj"][4] = allocator["objects"][207]
+q1_entrance["obj"][5] = allocator["objects"][208]
+q1_entrance["obj"][6] = allocator["objects"][209]
+q1_entrance["obj"][7] = allocator["objects"][210]
+q1_entrance["obj"][8] = allocator["objects"][211]
+q1_entrance["obj"][9] = allocator["objects"][212]
+q1_entrance["obj"][10] = allocator["objects"][213]
+q1_entrance["obj"][11] = allocator["objects"][214]
+q1_entrance["obj"][12] = allocator["objects"][215]
+q1_entrance["obj"][13] = allocator["objects"][216]
+q1_entrance["obj"][14] = allocator["objects"][217]
+q1_entrance["obj"][15] = allocator["objects"][218]
+q1_entrance["obj"][16] = allocator["objects"][219]
+q1_entrance["obj"][17] = allocator["objects"][220]
+q1_entrance["obj"][18] = allocator["objects"][221]
+q1_entrance["obj"][19] = allocator["objects"][222]
+q1_entrance["obj"][20] = allocator["objects"][223]
+q1_entrance["obj"][21] = allocator["objects"][224]
+q1_entrance["obj"][22] = allocator["objects"][225]
+q1_entrance["obj"][23] = allocator["objects"][226]
+q1_entrance["obj"][24] = allocator["objects"][227]
+q1_entrance["obj"][25] = allocator["objects"][228]
+q1_entrance["obj"][26] = allocator["objects"][229]
+q1_entrance["obj"][27] = allocator["objects"][230]
+q1_entrance["obj"][28] = allocator["objects"][231]
+q1_entrance["obj"][29] = allocator["objects"][232]
+q1_entrance["obj"][30] = allocator["objects"][233]
+q1_entrance["obj"][31] = allocator["objects"][234]
+q1_entrance["obj"][32] = allocator["objects"][235]
+q1_entrance["obj"][33] = allocator["objects"][236]
+q1_entrance["obj"][34] = allocator["objects"][237]
+q1_entrance["obj"][35] = allocator["objects"][238]
+q1_entrance["obj"][36] = allocator["objects"][239]
+q1_entrance["obj"][37] = allocator["objects"][240]
+q1_entrance["obj"][38] = allocator["objects"][241]
+q1_entrance["obj"][39] = allocator["objects"][242]
+q1_entrance["obj"][40] = allocator["objects"][243]
+q1_entrance["obj"][41] = allocator["objects"][244]
+q1_entrance["obj"][42] = allocator["objects"][245]
+q1_entrance["obj"][43] = allocator["objects"][246]
+q1_entrance["obj"][44] = allocator["objects"][247]
+q1_entrance["obj"][45] = allocator["objects"][248]
+q1_entrance["obj"][46] = allocator["objects"][249]
+q1_entrance["obj"][47] = allocator["objects"][250]
+q1_entrance["obj"][48] = allocator["objects"][251]
+q1_entrance["obj"][49] = allocator["objects"][252]
+q1_entrance["obj"][50] = allocator["objects"][253]
+q1_entrance["obj"][51] = allocator["objects"][254]
+q1_entrance["obj"][52] = allocator["objects"][255]
+q1_entrance["obj"][53] = allocator["objects"][256]
+q1_entrance["obj"][54] = allocator["objects"][257]
+q1_entrance["obj"][55] = allocator["objects"][258]
+q1_entrance["obj"][56] = allocator["objects"][259]
+q1_entrance["obj"][57] = allocator["objects"][260]
+q1_entrance["obj"][58] = allocator["objects"][261]
+q1_entrance["obj"][59] = allocator["objects"][262]
+q1_entrance["obj"][60] = allocator["objects"][263]
+q1_entrance["obj"][61] = allocator["objects"][264]
+q1_entrance["obj"][62] = allocator["objects"][265]
+q1_entrance["obj"][63] = allocator["objects"][266]
+q1_entrance["obj"][64] = allocator["objects"][267]
+q1_entrance["obj"][65] = allocator["objects"][268]
+q1_entrance["obj"][66] = allocator["objects"][269]
+q1_entrance["obj"][67] = allocator["objects"][270]
+q1_entrance["obj"][68] = allocator["objects"][271]
+q1_entrance["obj"][69] = allocator["objects"][272]
+q1_entrance["obj"][70] = allocator["objects"][273]
+q1_entrance["obj"][71] = allocator["objects"][274]
+q1_entrance["obj"][72] = allocator["objects"][275]
+q1_entrance["obj"][73] = allocator["objects"][276]
+q1_entrance["obj"][74] = allocator["objects"][277]
+q1_entrance["obj"][75] = allocator["objects"][278]
+q1_entrance["obj"][76] = allocator["objects"][279]
+q1_entrance["obj"][77] = allocator["objects"][280]
+q1_entrance["obj"][78] = allocator["objects"][281]
+q1_entrance["obj"][79] = allocator["objects"][282]
+q1_entrance["obj"][80] = allocator["objects"][283]
+q1_entrance["obj"][81] = allocator["objects"][284]
+q1_entrance["obj"][82] = allocator["objects"][285]
+q1_entrance["obj"][83] = allocator["objects"][286]
+q1_entrance["obj"][84] = allocator["objects"][287]
+q1_entrance["obj"][85] = allocator["objects"][288]
+q1_entrance["obj"][86] = allocator["objects"][289]
+q1_entrance["obj"][87] = allocator["objects"][290]
+q1_entrance["obj"][88] = allocator["objects"][291]
+q1_entrance["obj"][89] = allocator["objects"][292]
+q1_entrance["obj"][90] = allocator["objects"][293]
+q1_entrance["obj"][91] = allocator["objects"][294]
+q1_entrance["obj"][92] = allocator["objects"][295]
+q1_entrance["obj"][93] = allocator["objects"][296]
+q1_entrance["obj"][94] = allocator["objects"][297]
+q1_entrance["obj"][95] = allocator["objects"][298]
+q1_entrance["obj"][96] = allocator["objects"][299]
+q1_entrance["obj"][97] = allocator["objects"][300]
+q1_entrance["obj"][98] = allocator["objects"][301]
+q1_entrance["obj"][99] = allocator["objects"][302]
+q1_entrance["obj"][100] = allocator["objects"][303]
+q1_entrance["obj"][101] = allocator["objects"][304]
+q1_entrance["obj"][102] = q1_pwrbtn_entrance
+q1_entrance["obj"][103] = q1_pwrbtn_passage
+q1_entrance["obj"][104] = q1_pwrbtn_toilet
+q1_entrance["obj"][105] = q1_pwrbtn_storage
+q1_entrance["obj"][106] = q1_pwrbtn_hall
+q1_entrance["obj"][107] = q1_pwrbtn_admin
+q1_entrance["obj"][108] = q1_pwrbtn_library
+q1_entrance["obj"][109] = q1_pwrbtn_general
+q1_entrance["obj"][110] = status_map
+q1_entrance["obj"][111] = allocator["objects"][305]
+q1_entrance["obj"][112] = allocator["objects"][306]
+q1_entrance["obj"][113] = allocator["objects"][307]
+q1_entrance["obj"][114] = q1_powerswitch
+q1_entrance["obj"][115] = allocator["objects"][308]
+q1_entrance["obj"][116] = allocator["objects"][309]
+q1_entrance["obj"][117] = allocator["objects"][310]
+q1_entrance["obj"][118] = q1_con1_back
+q1_entrance["obj"][119] = q1_con1_panel_back
+q1_entrance["obj"]["list_type"] = true
+q1_entrance["obj"]["__modified__"] = true
+q1_entrance["__from__"]="q1_passage"
+dbg_choose_location["__phr_stack"] = {};
+dbg_choose_location["__phr_stack"][1] = 1
+allocator["objects"]["dbg_execute_cmd[\"obj\"][1]"]["_txt"]="return \"Hello World!\""
+confidenser["_taken"] = true
+allocator["objects"]["dbg_dump_object[\"obj\"][1]"]["_txt"]="main"
+map_bunker["__visited"] = 1
+map_bunker["__from__"]="main"
+map_bunker["way"] = list({});
+allocator["objects"]["allocator[\"objects\"][109][\"way\"][1]"]["_disabled"] = false
+map_bunker["way"][1] = allocator["objects"]["allocator[\"objects\"][109][\"way\"][1]"]
+allocator["objects"]["allocator[\"objects\"][109][\"way\"][3]"]["_disabled"] = false
+map_bunker["way"][2] = allocator["objects"]["allocator[\"objects\"][109][\"way\"][3]"]
+map_bunker["way"][3] = vroom("Вход в бункер", "q1_entrance");
+map_bunker["way"][3]["_dynamic_type"] = true
+allocator["objects"]["allocator[\"objects\"][109][\"way\"][5]"]["_disabled"] = true
+map_bunker["way"][5] = allocator["objects"]["allocator[\"objects\"][109][\"way\"][5]"]
+map_bunker["way"]["list_type"] = true
+map_bunker["way"]["__modified__"] = true
+q1_pwrbtn_toilet["_disabled"] = true
+withe_s["_disabled"] = true
+status_map["_disabled"] = true
+status_map["_dynamic_type"] = true
+status_map["_taken"] = false
+status_map["__where__"]="q1_entrance"
+dbg_drop_object["__phr_stack"] = {};
+dbg_drop_object["__phr_stack"][1] = 1
+q1_pwrbtn_hall["_disabled"] = true
+q1_pwrbtn_entrance["_disabled"] = true
+q1_toilet["__visited"] = 1
+q1_toilet["obj"] = list({});
+q1_toilet["obj"][2] = status_quest
+q1_toilet["obj"]["list_type"] = true
+q1_toilet["obj"]["__modified__"] = true
+q1_toilet["obj"][1] = status_map
+q1_toilet["__from__"]="q1_passage"
+arrest["__phr_stack"] = {};
+arrest["__phr_stack"][1] = 1
+allocator["objects"]["arrest[\"obj\"][11]"]["_disabled"] = true
+allocator["objects"]["arrest[\"obj\"][15]"]["_disabled"] = true
+main["__visited"] = 1
+allocator["objects"]["main[\"way\"][1]"]["__from__"]="main"
+main["__from__"]="main"
+q1_storage["__visited"] = 1
+q1_storage["obj"] = list({});
+q1_storage["obj"][2] = status_quest
+q1_storage["obj"]["list_type"] = true
+q1_storage["obj"]["__modified__"] = true
+q1_storage["obj"][1] = status_map
+q1_storage["__from__"]="q1_passage"
+q1_passage["__visited"] = 4
+q1_passage["obj"] = list({});
+q1_passage["obj"][1] = q1_console_2
+q1_passage["obj"][2] = q1_console_3
+q1_passage["obj"]["list_type"] = true
+q1_passage["obj"]["__modified__"] = true
+q1_passage["obj"][4] = status_quest
+q1_passage["obj"][3] = status_map
+q1_passage["__from__"]="q1_hall"
+q1_outside["__visited"] = 3
+q1_outside["obj"] = list({});
+q1_outside["obj"]["list_type"] = true
+q1_outside["obj"]["__modified__"] = true
+q1_outside["obj"][1] = status_quest
+q1_outside["__from__"]="q1_outside"
+status_bunker["_taken"] = true
+status_bunker["__where__"]="pl"
+q1_con1_panel_back["_disabled"] = false
+q1_con1_back["_disabled"] = true
+withe_w["_disabled"] = false
+q1_pwrbtn_general["_disabled"] = true
+q1_pwrbtn_admin["_disabled"] = true
+q1_pwrbtn_storage["_disabled"] = true
+q1_console_1["_disabled"] = true
+q1_powerswitch["_disabled"] = true
+q1_pwrbtn_passage["_disabled"] = true
+password["shift"] = false
+password["alt"] = false
+password["__visited"] = 1
+password["_flt"] = 400
+password["__from__"]="q1_outside"
+password["text"]="123"
+password["alt_xlat"] = false
+goto_novgorod["_dynamic_type"] = true
+map_novgorod["way"] = list({});
+map_novgorod["way"][1] = allocator["objects"]["allocator[\"objects\"][141][\"way\"][1]"]
+map_novgorod["way"][2] = allocator["objects"]["allocator[\"objects\"][141][\"way\"][2]"]
+map_novgorod["way"][3] = allocator["objects"]["allocator[\"objects\"][141][\"way\"][3]"]
+map_novgorod["way"][4] = allocator["objects"]["allocator[\"objects\"][141][\"way\"][4]"]
+map_novgorod["way"][5] = allocator["objects"]["allocator[\"objects\"][141][\"way\"][5]"]
+map_novgorod["way"][6] = goto_novgorod
+map_novgorod["way"]["list_type"] = true
+map_novgorod["way"]["__modified__"] = true
+status_quest["_taken"] = true
+status_quest["__where__"]="pl"
+status_relationship["_dynamic_type"] = true
+status_relationship["_taken"] = true
+sympathiser["_taken"] = true
+debug_dlg["__phr_stack"] = {};
+debug_dlg["__phr_stack"][1] = 1
+format["quotes"] = true;
+format["nopara"] = "_";
+format["dash"] = true;
+format["para"] = true;
+format["para_space"] = "    ";
+input["_key_hooks"] = {};
+q1_pwrbtn_library["_disabled"] = true
+q1_hall["__visited"] = 3
+q1_hall["obj"] = list({});
+q1_hall["obj"][1] = q1_console_4
+q1_hall["obj"][2] = status_map
+q1_hall["obj"]["list_type"] = true
+q1_hall["obj"]["__modified__"] = true
+q1_hall["obj"][3] = status_quest
+q1_hall["__from__"]="q1_administration"
+dbg_choose_object["__phr_stack"] = {};
+dbg_choose_object["__phr_stack"][1] = 1
+q1_library["__visited"] = 1
+q1_library["obj"] = list({});
+q1_library["obj"][2] = status_quest
+q1_library["obj"]["list_type"] = true
+q1_library["obj"]["__modified__"] = true
+q1_library["obj"][1] = status_map
+q1_library["__from__"]="q1_hall"
+game.pl = "pl"
+game["_running"] = true
+game["_time"] = 63
+game["__last_act"]="Я нажал кнопочку #16"
+game["_sound_loop"] = 1
+game["_lastdisp"]="<w:    >Мы в проходоной \
+\
+<w:    ><i>Я нажал кнопочку #16</i>\
+\
+<w:    ><a:01>Кнопочка 1.</a> <a:02>Кнопочка 16.</a> <a:03>Кнопочка 29.</a> <a:04>Кнопочка 31.</a> <a:05>Кнопочка 57.</a> <a:06>Кнопочка 64.</a> <a:07>Кнопочка 67.</a> <a:08>Кнопочка 68.</a> <a:09>Кнопочка 89.</a> <a:010>Кнопочка 95.</a> <a:011>Закрыть щиток</a> \
+"
+game["_sound_channel"] = -1
+game["_scripts"] = {};
+time_list = {};
+time_list[1]="Утр"
+time_list[2]="Дно"
+time_list[3]="Ночер"
+time_list[4]="Ночь"
+food = 99
+bunker_enter_password="123"
+water = 99
+hunger = 0
+novgorod_dsc = {};
+novgorod_dsc["post"]=""
+novgorod_dsc["prae"]=""
+novgorod_dsc["by_confidence"] = {};
+novgorod_dsc["by_confidence"][1]="Мы вошли в город, кольчец."
+novgorod_dsc["by_confidence"][2]="Слышишь, довольно много всякого шума? Они собирают свои шатры и гремят банками. Пришли недавно. Скоро уйдут. Тысячи гнусных уродцев."
+novgorod_dsc["by_confidence"][3]="Ты помни: это не настоящий город. Хрупкий."
+novgorod_dsc["by_sympathy"] = {};
+novgorod_dsc["by_sympathy"][1]="Противно быть с тобой, да еще и тут."
+novgorod_dsc["by_sympathy"][2]="Если ты голоден, здесь можно добыть еды."
+novgorod_dsc["by_sympathy"][3]="Если ты голоден, здесь можно добыть еды. Я был здесь, когда города не было. Было тихо и я ловил кроликов. Там, где идет город, становится хуже."
+thirst = 0
+turn = 1
+cells = list({});
+cells[1] = allocator["objects"][1]
+cells[2] = allocator["objects"][2]
+cells[3] = allocator["objects"][3]
+cells[4] = allocator["objects"][4]
+cells[5] = allocator["objects"][5]
+cells[6] = allocator["objects"][6]
+cells[7] = allocator["objects"][7]
+cells[8] = allocator["objects"][8]
+cells[9] = allocator["objects"][9]
+cells[10] = allocator["objects"][10]
+cells[11] = allocator["objects"][11]
+cells[12] = allocator["objects"][12]
+cells[13] = allocator["objects"][13]
+cells[14] = allocator["objects"][14]
+cells[15] = allocator["objects"][15]
+cells[16] = allocator["objects"][16]
+cells[17] = allocator["objects"][17]
+cells[18] = allocator["objects"][18]
+cells[19] = allocator["objects"][19]
+cells[20] = allocator["objects"][20]
+cells[21] = allocator["objects"][21]
+cells[22] = allocator["objects"][22]
+cells[23] = allocator["objects"][23]
+cells[24] = allocator["objects"][24]
+cells[25] = allocator["objects"][25]
+cells[26] = allocator["objects"][26]
+cells[27] = allocator["objects"][27]
+cells[28] = allocator["objects"][28]
+cells[29] = allocator["objects"][29]
+cells[30] = allocator["objects"][30]
+cells[31] = allocator["objects"][31]
+cells[32] = allocator["objects"][32]
+cells[33] = allocator["objects"][33]
+cells[34] = allocator["objects"][34]
+cells[35] = allocator["objects"][35]
+cells[36] = allocator["objects"][36]
+cells[37] = allocator["objects"][37]
+cells[38] = allocator["objects"][38]
+cells[39] = allocator["objects"][39]
+cells[40] = allocator["objects"][40]
+cells[41] = allocator["objects"][41]
+cells[42] = allocator["objects"][42]
+cells[43] = allocator["objects"][43]
+cells[44] = allocator["objects"][44]
+cells[45] = allocator["objects"][45]
+cells[46] = allocator["objects"][46]
+cells[47] = allocator["objects"][47]
+cells[48] = allocator["objects"][48]
+cells[49] = allocator["objects"][49]
+cells[50] = allocator["objects"][50]
+cells[51] = allocator["objects"][51]
+cells[52] = allocator["objects"][52]
+cells[53] = allocator["objects"][53]
+cells[54] = allocator["objects"][54]
+cells[55] = allocator["objects"][55]
+cells[56] = allocator["objects"][56]
+cells[57] = allocator["objects"][57]
+cells[58] = allocator["objects"][58]
+cells[59] = allocator["objects"][59]
+cells[60] = allocator["objects"][60]
+cells[61] = allocator["objects"][61]
+cells[62] = allocator["objects"][62]
+cells[63] = allocator["objects"][63]
+cells[64] = allocator["objects"][64]
+cells[65] = allocator["objects"][65]
+cells[66] = allocator["objects"][66]
+cells[67] = allocator["objects"][67]
+cells[68] = allocator["objects"][68]
+cells[69] = allocator["objects"][69]
+cells[70] = allocator["objects"][70]
+cells[71] = allocator["objects"][71]
+cells[72] = allocator["objects"][72]
+cells[73] = allocator["objects"][73]
+cells[74] = allocator["objects"][74]
+cells[75] = allocator["objects"][75]
+cells[76] = allocator["objects"][76]
+cells[77] = allocator["objects"][77]
+cells[78] = allocator["objects"][78]
+cells[79] = allocator["objects"][79]
+cells[80] = allocator["objects"][80]
+cells[81] = allocator["objects"][81]
+cells[82] = allocator["objects"][82]
+cells[83] = allocator["objects"][83]
+cells[84] = allocator["objects"][84]
+cells[85] = allocator["objects"][85]
+cells[86] = allocator["objects"][86]
+cells[87] = allocator["objects"][87]
+cells[88] = allocator["objects"][88]
+cells[89] = allocator["objects"][89]
+cells[90] = allocator["objects"][90]
+cells[91] = allocator["objects"][91]
+cells[92] = allocator["objects"][92]
+cells[93] = allocator["objects"][93]
+cells[94] = allocator["objects"][94]
+cells[95] = allocator["objects"][95]
+cells[96] = allocator["objects"][96]
+cells[97] = allocator["objects"][97]
+cells[98] = allocator["objects"][98]
+cells[99] = allocator["objects"][99]
+cells[100] = allocator["objects"][100]
+cells[101] = allocator["objects"][101]
+cells[102] = allocator["objects"][102]
+cells[103] = allocator["objects"][103]
+cells[104] = allocator["objects"][104]
+cells[105] = allocator["objects"][105]
+cells[106] = allocator["objects"][106]
+cells[107] = allocator["objects"][107]
+cells[108] = allocator["objects"][108]
+cells[109] = map_bunker
+cells[110] = allocator["objects"][110]
+cells[111] = allocator["objects"][111]
+cells[112] = allocator["objects"][112]
+cells[113] = allocator["objects"][113]
+cells[114] = allocator["objects"][114]
+cells[115] = allocator["objects"][115]
+cells[116] = allocator["objects"][116]
+cells[117] = allocator["objects"][117]
+cells[118] = allocator["objects"][118]
+cells[119] = allocator["objects"][119]
+cells[120] = allocator["objects"][120]
+cells[121] = allocator["objects"][121]
+cells[122] = allocator["objects"][122]
+cells[123] = allocator["objects"][123]
+cells[124] = allocator["objects"][124]
+cells[125] = allocator["objects"][125]
+cells[126] = allocator["objects"][126]
+cells[127] = allocator["objects"][127]
+cells[128] = allocator["objects"][128]
+cells[129] = allocator["objects"][129]
+cells[130] = allocator["objects"][130]
+cells[131] = allocator["objects"][131]
+cells[132] = allocator["objects"][132]
+cells[133] = allocator["objects"][133]
+cells[134] = allocator["objects"][134]
+cells[135] = allocator["objects"][135]
+cells[136] = allocator["objects"][136]
+cells[137] = allocator["objects"][137]
+cells[138] = allocator["objects"][138]
+cells[139] = allocator["objects"][139]
+cells[140] = allocator["objects"][140]
+cells[141] = map_novgorod
+cells[142] = allocator["objects"][142]
+cells[143] = allocator["objects"][143]
+cells[144] = allocator["objects"][144]
+cells[145] = allocator["objects"][145]
+cells[146] = allocator["objects"][146]
+cells[147] = allocator["objects"][147]
+cells[148] = allocator["objects"][148]
+cells[149] = allocator["objects"][149]
+cells[150] = allocator["objects"][150]
+cells[151] = allocator["objects"][151]
+cells[152] = allocator["objects"][152]
+cells[153] = allocator["objects"][153]
+cells[154] = allocator["objects"][154]
+cells[155] = allocator["objects"][155]
+cells[156] = allocator["objects"][156]
+cells[157] = allocator["objects"][157]
+cells[158] = allocator["objects"][158]
+cells[159] = allocator["objects"][159]
+cells[160] = allocator["objects"][160]
+cells[161] = allocator["objects"][161]
+cells[162] = allocator["objects"][162]
+cells[163] = allocator["objects"][163]
+cells[164] = allocator["objects"][164]
+cells[165] = allocator["objects"][165]
+cells[166] = allocator["objects"][166]
+cells[167] = allocator["objects"][167]
+cells[168] = allocator["objects"][168]
+cells[169] = allocator["objects"][169]
+cells[170] = allocator["objects"][170]
+cells[171] = allocator["objects"][171]
+cells[172] = allocator["objects"][172]
+cells[173] = allocator["objects"][173]
+cells[174] = allocator["objects"][174]
+cells[175] = allocator["objects"][175]
+cells[176] = allocator["objects"][176]
+cells[177] = allocator["objects"][177]
+cells[178] = allocator["objects"][178]
+cells[179] = allocator["objects"][179]
+cells[180] = allocator["objects"][180]
+cells[181] = allocator["objects"][181]
+cells[182] = allocator["objects"][182]
+cells[183] = allocator["objects"][183]
+cells[184] = allocator["objects"][184]
+cells[185] = allocator["objects"][185]
+cells[186] = allocator["objects"][186]
+cells[187] = allocator["objects"][187]
+cells[188] = allocator["objects"][188]
+cells[189] = allocator["objects"][189]
+cells[190] = allocator["objects"][190]
+cells[191] = allocator["objects"][191]
+cells[192] = allocator["objects"][192]
+cells[193] = allocator["objects"][193]
+cells[194] = allocator["objects"][194]
+cells[195] = allocator["objects"][195]
+cells[196] = allocator["objects"][196]
+cells[197] = allocator["objects"][197]
+cells[198] = allocator["objects"][198]
+cells[199] = allocator["objects"][199]
+cells[200] = allocator["objects"][200]
+cells[201] = allocator["objects"][201]
+cells[202] = allocator["objects"][202]
+cells[203] = allocator["objects"][203]
+cells[204] = allocator["objects"][204]
+cells["list_type"] = true
+cells["__modified__"] = true
+confidence = 0
+dolgota = {};
+dolgota[1]="a"
+dolgota[2]="b"
+dolgota[3]="c"
+dolgota[4]="d"
+dolgota[5]="e"
+dolgota[6]="f"
+dolgota[7]="g"
+dolgota[8]="h"
+dolgota[9]="i"
+dolgota[10]="j"
+dolgota[11]="k"
+dolgota[12]="l"
+dolgota[13]="m"
+dolgota[14]="n"
+dolgota[15]="o"
+dolgota[16]="p"
+dolgota[17]="q"
+youarehere = 109
+_VERSION="Lua 5.1"
+time = 4
+bunker["con4"]["list_type"] = true
+bunker["list_type"] = true
+bunker["buttons"] = list({});
+bunker["buttons"][1] = allocator["objects"][205]
+bunker["buttons"][2] = allocator["objects"][206]
+bunker["buttons"][3] = allocator["objects"][207]
+bunker["buttons"][4] = allocator["objects"][208]
+bunker["buttons"][5] = allocator["objects"][209]
+bunker["buttons"][6] = allocator["objects"][210]
+bunker["buttons"][7] = allocator["objects"][211]
+bunker["buttons"][8] = allocator["objects"][212]
+bunker["buttons"][9] = allocator["objects"][213]
+bunker["buttons"][10] = allocator["objects"][214]
+bunker["buttons"][11] = allocator["objects"][215]
+bunker["buttons"][12] = allocator["objects"][216]
+bunker["buttons"][13] = allocator["objects"][217]
+bunker["buttons"][14] = allocator["objects"][218]
+bunker["buttons"][15] = allocator["objects"][219]
+bunker["buttons"][16] = allocator["objects"][220]
+bunker["buttons"][17] = allocator["objects"][221]
+bunker["buttons"][18] = allocator["objects"][222]
+bunker["buttons"][19] = allocator["objects"][223]
+bunker["buttons"][20] = allocator["objects"][224]
+bunker["buttons"][21] = allocator["objects"][225]
+bunker["buttons"][22] = allocator["objects"][226]
+bunker["buttons"][23] = allocator["objects"][227]
+bunker["buttons"][24] = allocator["objects"][228]
+bunker["buttons"][25] = allocator["objects"][229]
+bunker["buttons"][26] = allocator["objects"][230]
+bunker["buttons"][27] = allocator["objects"][231]
+bunker["buttons"][28] = allocator["objects"][232]
+bunker["buttons"][29] = allocator["objects"][233]
+bunker["buttons"][30] = allocator["objects"][234]
+bunker["buttons"][31] = allocator["objects"][235]
+bunker["buttons"][32] = allocator["objects"][236]
+bunker["buttons"][33] = allocator["objects"][237]
+bunker["buttons"][34] = allocator["objects"][238]
+bunker["buttons"][35] = allocator["objects"][239]
+bunker["buttons"][36] = allocator["objects"][240]
+bunker["buttons"][37] = allocator["objects"][241]
+bunker["buttons"][38] = allocator["objects"][242]
+bunker["buttons"][39] = allocator["objects"][243]
+bunker["buttons"][40] = allocator["objects"][244]
+bunker["buttons"][41] = allocator["objects"][245]
+bunker["buttons"][42] = allocator["objects"][246]
+bunker["buttons"][43] = allocator["objects"][247]
+bunker["buttons"][44] = allocator["objects"][248]
+bunker["buttons"][45] = allocator["objects"][249]
+bunker["buttons"][46] = allocator["objects"][250]
+bunker["buttons"][47] = allocator["objects"][251]
+bunker["buttons"][48] = allocator["objects"][252]
+bunker["buttons"][49] = allocator["objects"][253]
+bunker["buttons"][50] = allocator["objects"][254]
+bunker["buttons"][51] = allocator["objects"][255]
+bunker["buttons"][52] = allocator["objects"][256]
+bunker["buttons"][53] = allocator["objects"][257]
+bunker["buttons"][54] = allocator["objects"][258]
+bunker["buttons"][55] = allocator["objects"][259]
+bunker["buttons"][56] = allocator["objects"][260]
+bunker["buttons"][57] = allocator["objects"][261]
+bunker["buttons"][58] = allocator["objects"][262]
+bunker["buttons"][59] = allocator["objects"][263]
+bunker["buttons"][60] = allocator["objects"][264]
+bunker["buttons"][61] = allocator["objects"][265]
+bunker["buttons"][62] = allocator["objects"][266]
+bunker["buttons"][63] = allocator["objects"][267]
+bunker["buttons"][64] = allocator["objects"][268]
+bunker["buttons"][65] = allocator["objects"][269]
+bunker["buttons"][66] = allocator["objects"][270]
+bunker["buttons"][67] = allocator["objects"][271]
+bunker["buttons"][68] = allocator["objects"][272]
+bunker["buttons"][69] = allocator["objects"][273]
+bunker["buttons"][70] = allocator["objects"][274]
+bunker["buttons"][71] = allocator["objects"][275]
+bunker["buttons"][72] = allocator["objects"][276]
+bunker["buttons"][73] = allocator["objects"][277]
+bunker["buttons"][74] = allocator["objects"][278]
+bunker["buttons"][75] = allocator["objects"][279]
+bunker["buttons"][76] = allocator["objects"][280]
+bunker["buttons"][77] = allocator["objects"][281]
+bunker["buttons"][78] = allocator["objects"][282]
+bunker["buttons"][79] = allocator["objects"][283]
+bunker["buttons"][80] = allocator["objects"][284]
+bunker["buttons"][81] = allocator["objects"][285]
+bunker["buttons"][82] = allocator["objects"][286]
+bunker["buttons"][83] = allocator["objects"][287]
+bunker["buttons"][84] = allocator["objects"][288]
+bunker["buttons"][85] = allocator["objects"][289]
+bunker["buttons"][86] = allocator["objects"][290]
+bunker["buttons"][87] = allocator["objects"][291]
+bunker["buttons"][88] = allocator["objects"][292]
+bunker["buttons"][89] = allocator["objects"][293]
+bunker["buttons"][90] = allocator["objects"][294]
+bunker["buttons"][91] = allocator["objects"][295]
+bunker["buttons"][92] = allocator["objects"][296]
+bunker["buttons"][93] = allocator["objects"][297]
+bunker["buttons"][94] = allocator["objects"][298]
+bunker["buttons"][95] = allocator["objects"][299]
+bunker["buttons"][96] = allocator["objects"][300]
+bunker["buttons"][97] = allocator["objects"][301]
+bunker["buttons"][98] = allocator["objects"][302]
+bunker["buttons"][99] = allocator["objects"][303]
+bunker["buttons"][100] = allocator["objects"][304]
+bunker["buttons"][101] = q1_pwrbtn_entrance
+bunker["buttons"][102] = q1_pwrbtn_passage
+bunker["buttons"][103] = q1_pwrbtn_toilet
+bunker["buttons"][104] = q1_pwrbtn_storage
+bunker["buttons"][105] = q1_pwrbtn_hall
+bunker["buttons"][106] = q1_pwrbtn_admin
+bunker["buttons"][107] = q1_pwrbtn_library
+bunker["buttons"][108] = q1_pwrbtn_general
+bunker["buttons"]["list_type"] = true
+bunker["buttons"]["__modified__"] = true
+bunker["con1"] = list({});
+bunker["con1"][2] = allocator["objects"][306]
+bunker["con1"]["list_type"] = true
+bunker["con1"][6] = allocator["objects"][309]
+bunker["con1"][7] = allocator["objects"][310]
+bunker["con1"][5] = allocator["objects"][308]
+bunker["con1"]["__modified__"] = true
+bunker["con1"][4] = q1_powerswitch
+bunker["con1"][1] = allocator["objects"][305]
+bunker["con1"][3] = allocator["objects"][307]
+bunker["generalpower"] = false
+bunker["con3"]["list_type"] = true
+bunker["con2"]["list_type"] = true
+bunker["power"] = {};
+bunker["power"]["hall"] = true
+bunker["power"]["toilet"] = false
+bunker["power"]["entrance"] = true
+bunker["power"]["storage"] = false
+bunker["power"]["passage"] = false
+bunker["power"]["admin"] = false
+bunker["power"]["library"] = true
+sympathy = 0
