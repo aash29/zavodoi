@@ -14,15 +14,14 @@ require "xact"
 game.forcedsc = true; -- атрибут, чтобы описание сцены не пряталось *без game можно добавлять в каждой сцене)
 
 global {
-	
-	dolgota = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q'};
+
 	cells = list {};
-	youarehere = 0;
+	youarehere = list {1,1};
 	turn = 0;
 	time1 = 4;
 	time_list = {'Утр', 'Дно', 'Ночер', 'Ночь'};
 	
-	food = 100;
+	food = 5;
 	hunger = 4;
 	
 	water = 100;
@@ -106,18 +105,22 @@ function myconstructor(x,y)
 		table.insert(v.way,south)
 	end
 
+	table.insert(v.way,'hunger_scene')
+
 	v.obj={}
 
-
---[[
 	
 	v.entered = function (s, f)
+
+		youarehere[1]=s.x
+		youarehere[2]=s.y
+
 		hunger = hunger + 1
 		turn = turn + 1;
 		
 		--профилактически выкл. лозу
-		s.obj:disable('withe_w')
-		s.obj:disable('withe_s')
+		--s.obj:disable('withe_w')
+		--s.obj:disable('withe_s')
 
 		--выключение выхода в Голод
 		if hunger < 7 then
@@ -139,26 +142,22 @@ function myconstructor(x,y)
 		elseif hunger >= 7 then
 			pn ('Жди здесь, я за едой.')
 			s.way:disable_all()
-			s.way:enable(hunger_scene)
+			s.way:enable('hunger_scene')
 		end
 
 		--включение-выключение слабой лозы
-		if s.glowing_weak == true and hunger < 4 then
+		if exist('withe_w') and hunger < 4 then
 			s.obj:enable('withe_w')
-		elseif s.glowing_weak == true and hunger > 3 then
+		elseif exist('withe_w') and hunger > 3 then
 			pn ('Я слишком голоден, чтобы видеть.')
-			s.obj:disable('withe_w')
-		else 
 			s.obj:disable('withe_w')
 		end
 		
 		--включение-выключение сильной лозы
-		if s.glowing_strong == true and hunger < 4 then
+		if exist('withe_s') and hunger < 4 then
 			s.obj:enable('withe_s')
-		elseif s.glowing_strong == true and hunger > 3 then
+		elseif exist('withe_s') and hunger > 3 then
 			pn ('Я слишком голоден, чтобы видеть.')
-			s.obj:disable('withe_s')
-		else 
 			s.obj:disable('withe_s')
 		end
 
@@ -191,12 +190,11 @@ function myconstructor(x,y)
 		end
 		
 	end
-]]--
-	
+	--[[
 	v.exit = function (s, f)
-		youarehere = s.idx
+		youarehere = s.x,s.y
 	end	
-	
+	]]--
 	
 	return room(v)
 end
@@ -284,7 +282,7 @@ hunger_scene = room {
 		turn = turn + rnd(4)
 		food = rnd(2) + 1
 		hunger = 0;
-		hunger_scene.way:add(vroom('Продолжить путь', 'cells['..tostring(youarehere)..']'));
+		hunger_scene.way:add(vroom('Продолжить путь', 'cells['..tostring(youarehere[1])..']['..tostring(youarehere[2])..']'));
 	end;
 	left = function (s, f)
 		hunger_scene.way:zap()
