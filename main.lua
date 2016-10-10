@@ -34,7 +34,7 @@ global {
 	maxX =17;
 	maxY =12;
 
-	water_wells = {{1,5}, {14,3},{6,9},{5,9},{10,17}};
+	water_wells = {{5,1},{5,9},{9,6}, {14,3},{17,10}};
 
 	}
 	
@@ -106,8 +106,10 @@ function myconstructor(x,y)
 		table.insert(v.way,south)
 	end
 
+	v.obj={}
 
 
+--[[
 	
 	v.entered = function (s, f)
 		hunger = hunger + 1
@@ -189,7 +191,7 @@ function myconstructor(x,y)
 		end
 		
 	end
-
+]]--
 	
 	v.exit = function (s, f)
 		youarehere = s.idx
@@ -215,10 +217,18 @@ quest_room = function(v)
 	return room(v)
 end
 																	--[[ ОБЪЕКТЫ ]]--
+
+withe_ww = obj {
+	nam = "Лоза0",
+	dsc = "Что-то здесь не так",
+	act = function (s)
+		dowser_dreams()
+	end
+ };
 	
 withe_w = obj {
 	nam = "Лоза1",
-	dsc = "трепещут чесалки",
+	dsc = "Трепещут чесалки",
 	act = function (s)
 		dowser_dreams()
 	end
@@ -226,11 +236,20 @@ withe_w = obj {
  
 withe_s = obj {
 	nam = "Лоза2",
-	dsc = "{Сильно трепещут чесалки",
+	dsc = "Сильно трепещут чесалки",
 	act = function (s)
 		dowser_dreams()
 	end
 		}; 
+
+
+withe_ss = obj {
+	nam = "Лоза3",
+	dsc = "Очень cильно трепещут чесалки",
+	act = function (s)
+		dowser_dreams()
+	end
+		};
 
 confidenser = menu {
 	nam = "ДОВ +",
@@ -325,22 +344,42 @@ for x = 1, maxX do
 end
 --stead.add_var {cells}
 
+main=cells[1][1]
+
 for k,v in pairs(water_wells) do
 	for i =v[1]-2,v[1]+2 do
 		for j =v[2]-2,v[2]+2 do
 			if (cells[i]) then
 				if (cells[i][j]) then
 					d=((i-v[1])^2 + (j-v[2])^2)^(1/2)
-					--if (d>0) and (d<2) then
-						objs(cells[i][j]):add(withe_s)
-						print (i..','..j)
-					--end
+
+					if (d<0.5) then
+						objs(cells[i][j]):add('withe_ss')   --очень сильная лоза
+					end
+					if (d>0.5) and (d<1.5) then
+						--put(new [[obj {nam = 'test', dsc='test' } ]],cells[i][j]);
+						objs(cells[i][j]):add('withe_s')   --сильная лоза
+						print (i..','..j..','..'сильная лоза')
+					end
+
+					if (d>1.5) and (d<2.5) then
+						--put(new [[obj {nam = 'test', dsc='test' } ]],cells[i][j]);
+						objs(cells[i][j]):add('withe_w')  --слабая лоза
+						print (i..','..j..','..'слабая лоза')
+					end
+				    
+					if (d>2.5) then
+						--put(new [[obj {nam = 'test', dsc='test' } ]],cells[i][j]);
+				    	objs(cells[i][j]):add(withe_ww); -- совсем слабая лоза
+				    	print (i..','..j..','..'совсем слабая лоза')
+				    end
 				end
 			end
 		end 
 	end 
 end
 
+--objs(cells[2][2]):add(withe_w)
 
 --[[x
 cells[1][1] = room {
@@ -354,7 +393,7 @@ cells[1][1] = room {
 ]]--
 
 
-main=cells[1][1]
+
 
 take(status_map)
 take(status_relationship)
