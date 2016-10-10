@@ -16,10 +16,10 @@ game.forcedsc = true; -- атрибут, чтобы описание сцены 
 global {
 	
 	dolgota = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q'};
-	cells = {};
+	cells = list {};
 	youarehere = 0;
 	turn = 0;
-	time = 4;
+	time1 = 4;
 	time_list = {'Утр', 'Дно', 'Ночер', 'Ночь'};
 	
 	food = 100;
@@ -106,40 +106,7 @@ function myconstructor(x,y)
 		table.insert(v.way,south)
 	end
 
---[[
-	local hunger_scene = vroom('Голод', 'hunger_scene')
 
-	local no_north = { 'b2', 'h2', 'j2', 'k2', 'l2', 'm3', 'n3', 'o4', 'p5', 'f6', 'q6', 'g7', "h8", "i8", "j8", 'a9' }
-	local no_south = { 'f4', 'g4', 'h4', 'j4', 'i6', 'a7', '', '', '', '', '', '', '', '', '', '',  }
-	local no_west = { 'c1', 'i1', 'i5', 'i6', 'k5', 'k6', 'k7', 'b8', '', '', '', '', '', '', '', '', '', '',  }
-	local no_east = { 'a1', 'g1', 'i1', 'l2', 'n3', 'o4', 'p5', 'e5', 'i5', 'f6', 'i6', 'g7', '', '', '', '', '', '',  }
-	
-	local glowing_weak = {'c7', 'c8', 'c9', 'c10', 'c11', 'd7', 'd11', 'e7', 'e11', 'f7', 'f11', 'g7', 'g8', 'g9', 'g10', 'g11', 'h8', 'i8', 'j8', 'k8', 'k7', 'k6', 'k5', 'k4', 'j4', 'i4', 'h4', 'g4', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', }
-	local glowing_strong = {'d8', 'd9', 'd10', 'e8', 'e10', 'f8', 'f9', 'f10', 'i5', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''}
-	
-
-	v.obj = list {'withe_s', 'withe_w'}
-	v.obj:disable('withe_s')
-	v.obj:disable('withe_w')
-
-	
-	for _,c in pairs(glowing_weak) do
-		if c == v.adress then
-			v.glowing_weak = true
-			v.obj:enable('withe_w')
-			break
-		end
-	end
-		
-	for _,c in pairs(glowing_strong) do
-		if c == v.adress then
-			v.glowing_strong = true
-			v.obj:enable('withe_s')
-			break
-		end
-	end
-
-	]]--
 
 	
 	v.entered = function (s, f)
@@ -229,7 +196,7 @@ function myconstructor(x,y)
 	end	
 	
 	
-	return v
+	return room(v)
 end
 
 --комнаты не-пустоши
@@ -251,7 +218,7 @@ end
 	
 withe_w = obj {
 	nam = "Лоза1",
-	dsc = "{Слабая Лоза}",
+	dsc = "трепещут чесалки",
 	act = function (s)
 		dowser_dreams()
 	end
@@ -259,7 +226,7 @@ withe_w = obj {
  
 withe_s = obj {
 	nam = "Лоза2",
-	dsc = "{Сильная Лоза}",
+	dsc = "{Сильно трепещут чесалки",
 	act = function (s)
 		dowser_dreams()
 	end
@@ -352,13 +319,26 @@ for x = 1, maxX do
 	cells[x]={};
 	for y = 1, maxY do
 		--adress = {dolgota[x]..y, x, y, counter}
- 		cells[x][y] = room(myconstructor(x,y))
+ 		--cells[x][y] = room(myconstructor(x,y))
+ 		cells[x][y] = new('myconstructor('..tostring(x)..','..tostring(y)..')')
 	end
 end
-
+--stead.add_var {cells}
 
 for k,v in pairs(water_wells) do
-	pn('вода', v)		
+	for i =v[1]-2,v[1]+2 do
+		for j =v[2]-2,v[2]+2 do
+			if (cells[i]) then
+				if (cells[i][j]) then
+					d=((i-v[1])^2 + (j-v[2])^2)^(1/2)
+					--if (d>0) and (d<2) then
+						objs(cells[i][j]):add(withe_s)
+						print (i..','..j)
+					--end
+				end
+			end
+		end 
+	end 
 end
 
 
