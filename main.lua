@@ -226,15 +226,15 @@ withe_ww = obj {
 	
 withe_w = obj {
 	nam = "Лоза1",
-	dsc = "Трепещут чесалки",
-	act = function (s)
-		dowser_dreams()
-	end
+	dsc = "{Трепещут чесалки}",
+	act =function (s)
+	 print ("Act is here! "..stead.deref(s));
+	end;
  };
  
 withe_s = obj {
 	nam = "Лоза2",
-	dsc = "Сильно трепещут чесалки",
+	dsc = "{Сильно трепещут чесалки}",
 	act = function (s)
 		dowser_dreams()
 	end
@@ -243,7 +243,7 @@ withe_s = obj {
 
 withe_ss = obj {
 	nam = "Лоза3",
-	dsc = "Очень cильно трепещут чесалки",
+	dsc = "{Очень cильно трепещут чесалки}",
 	act = function (s)
 		dowser_dreams()
 	end
@@ -368,7 +368,7 @@ for k,v in pairs(water_wells) do
 				    
 					if (d>2.5) then
 						--put(new [[obj {nam = 'test', dsc='test' } ]],cells[i][j]);
-				    	objs(cells[i][j]):add(withe_ww); -- совсем слабая лоза
+				    	objs(cells[i][j]):add('withe_ww'); -- совсем слабая лоза
 				    	print (i..','..j..','..'совсем слабая лоза')
 				    end
 				end
