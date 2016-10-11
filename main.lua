@@ -118,10 +118,6 @@ function myconstructor(x,y)
 		hunger = hunger + 1
 		turn = turn + 1;
 		
-		--профилактически выкл. лозу
-		--s.obj:disable('withe_w')
-		--s.obj:disable('withe_s')
-
 		--выключение выхода в Голод
 		if hunger < 7 then
 			s.way:enable_all()
@@ -146,19 +142,14 @@ function myconstructor(x,y)
 		end
 
 		--включение-выключение слабой лозы
-		if exist('withe_w') and hunger < 4 then
-			s.obj:enable('withe_w')
-		elseif exist('withe_w') and hunger > 3 then
+		if  hunger < 4 then
+			--s.obj:enable('withe_w')
+			switchDowse(cells[s.x][s.y],1)
+		elseif  hunger > 3 then
 			pn ('Я слишком голоден, чтобы видеть.')
-			s.obj:disable('withe_w')
-		end
-		
-		--включение-выключение сильной лозы
-		if exist('withe_s') and hunger < 4 then
-			s.obj:enable('withe_s')
-		elseif exist('withe_s') and hunger > 3 then
-			pn ('Я слишком голоден, чтобы видеть.')
-			s.obj:disable('withe_s')
+			--s.obj:disable('withe_w')
+			--print(s.x,s.y)
+			switchDowse(cells[s.x][s.y],0)
 		end
 
 		--расход воды
@@ -173,14 +164,14 @@ function myconstructor(x,y)
 			pn ('У нас серьезные проблемы с водой')
 			local glitch = math.random(0, 2)	--рандомно включать лозу
 			if glitch == 1 then
-				s.obj:enable('withe_w')
-				s.obj:disable('withe_s')
+				s.obj:enable('Dowse')
+				s.obj:disable('StrongDowse')
 			elseif glitch == 2 then
-				s.obj:disable('withe_w')
-				s.obj:enable('withe_s')
+				s.obj:disable('Dowse')
+				s.obj:enable('StrongDowse')
 			else
-				s.obj:disable('withe_w')
-				s.obj:disable('withe_s')
+				s.obj:disable('StrongDowse')
+				s.obj:disable('Dowse')
 			end
 			
 		elseif thirst >= 5 then	--сбросить жажду до 2, чтобы не росла бесконечно
@@ -316,21 +307,31 @@ function populateDowseCell(ci,cj,i,j)  -- "населить"" клетку об�
 		v = new [[obj {nam = 'VeryStrongDowse', dsc='{Очень cильно трепещут чесалки.}', act = dowser_dreams, tags='dowse' } ]] 
 	end
 	if (d>0.5) and (d<1.5) then
-		v = new [[obj {nam = 'StrongDowse', dsc='{Сильно трепещут чесалки.}', act = dowser_dreams } ]] 
+		v = new [[obj {nam = 'StrongDowse', dsc='{Сильно трепещут чесалки.}', act = dowser_dreams, tags='dowse' } ]] 
 	end
 
 	if (d>1.5) and (d<2.5) then
-		v = new [[obj {nam = 'Dowse', dsc='{Трепещут чесалки.}', act = dowser_dreams } ]] 
+		v = new [[obj {nam = 'Dowse', dsc='{Трепещут чесалки.}', act = dowser_dreams, tags='dowse' } ]] 
 	end
     
 	if (d>2.5) then
-		v = new [[obj {nam = 'WeakDowse', dsc='{Сильно трепещут чесалки.}'} ]]
+		v = new [[obj {nam = 'WeakDowse', dsc='Что-то не так.', tags='dowse'} ]]
+	end
+	if (ci==17) and (cj==10) then
+		v.dsc=v.dsc..' Подозрительно.'
 	end
 
     objs(cells[i][j]):add(v)
 end
 
-function forNearestCells(ci,cj, f)
+function depopulateDowseCell(ci,cj,i,j)  -- удалить все следы воды из ячейки
+	l1 = getObjectsByTag(cells[i][j],"dowse")
+	for k,v in pairs(l1) do
+		objs(cells[i][j]):purge(v.nam)
+	end
+end;
+
+function forNearestCells(ci,cj, f)  -- применить функцию f ко всем соседним с ci,cj клеткам
 	for i =ci-2,ci+2 do
 		for j =cj-2,cj+2 do
 			if (cells[i]) then
@@ -342,7 +343,36 @@ function forNearestCells(ci,cj, f)
 	end 
 end
 
+function switchDowse(room,on)  -- включить или выключить лозу в комнате room
+	l1 = getObjectsByTag(room,"dowse")
+	for k,v in pairs(l1) do
+		if on==0 then
+			objs(room):disable(v.nam)
+		end
+		if on==1 then
+			objs(room):enable(v.nam)
+		end
+		print(v.nam)
+	end 
 
+end
+
+
+function getObjectsByTag(room,tag) -- найти в клетке room все объекты с тегом tag
+	result={}
+	for i = 1,10 do
+		if (objs(room)[i]) then
+			obj1=objs(room)[i]
+			print(obj1.nam,obj1.tags)
+			if (obj1.tags==tag) then
+				--objs(room):disable(obj1.nam)
+				table.insert(result,obj1)
+				print("inserted")
+			end
+		end
+	end
+	return result
+end
 
 for k,v in pairs(water_wells) do
 	forNearestCells(v[1],v[2],populateDowseCell)
@@ -350,12 +380,13 @@ end
 
 main=cells[1][1]
 
-for obj1 in objs(cells[5][1]) do
-	if (obj1.tag=='dowse') then
-		disable(obj1)
-	end
-end
 
+
+
+
+--forNearestCells(5,1,depopulateDowseCell)
+
+--print(getObjectsByTag(cells[5][1],"dowse"))
 
 --[[x
 cells[1][1] = room {
