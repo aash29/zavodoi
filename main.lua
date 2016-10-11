@@ -228,7 +228,7 @@ withe_w = obj {
 	nam = "Лоза1",
 	dsc = "{Трепещут чесалки}",
 	act =function (s)
-	 print ("Act is here! "..stead.deref(s));
+	 dowser_dreams()
 	end;
  };
  
@@ -352,23 +352,23 @@ for k,v in pairs(water_wells) do
 					d=((i-v[1])^2 + (j-v[2])^2)^(1/2)
 
 					if (d<0.5) then
-						objs(cells[i][j]):add('withe_ss')   --очень сильная лоза
+						objs(cells[i][j]):add(withe_ss)   --очень сильная лоза
 					end
 					if (d>0.5) and (d<1.5) then
 						--put(new [[obj {nam = 'test', dsc='test' } ]],cells[i][j]);
-						objs(cells[i][j]):add('withe_s')   --сильная лоза
+						objs(cells[i][j]):add(withe_s)   --сильная лоза
 						print (i..','..j..','..'сильная лоза')
 					end
 
 					if (d>1.5) and (d<2.5) then
-						--put(new [[obj {nam = 'test', dsc='test' } ]],cells[i][j]);
-						objs(cells[i][j]):add('withe_w')  --слабая лоза
+						--put(new [[obj {nam = 'test', dsc='{test}',act =dowser_dreams  } ]],cells[i][j]);
+						objs(cells[i][j]):add(withe_w)  --слабая лоза
 						print (i..','..j..','..'слабая лоза')
 					end
 				    
 					if (d>2.5) then
 						--put(new [[obj {nam = 'test', dsc='test' } ]],cells[i][j]);
-				    	objs(cells[i][j]):add('withe_ww'); -- совсем слабая лоза
+				    	objs(cells[i][j]):add(withe_ww); -- совсем слабая лоза
 				    	print (i..','..j..','..'совсем слабая лоза')
 				    end
 				end
@@ -377,7 +377,8 @@ for k,v in pairs(water_wells) do
 	end 
 end
 
---objs(cells[2][2]):add(withe_w)
+a,b = objs(cells[17][10]):srch(withe_ss)
+a.dsc="ляляля"
 
 --[[x
 cells[1][1] = room {
