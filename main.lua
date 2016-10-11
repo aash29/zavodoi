@@ -216,39 +216,6 @@ quest_room = function(v)
 end
 																	--[[ ОБЪЕКТЫ ]]--
 
-withe_ww = obj {
-	nam = "Лоза0",
-	dsc = "Что-то здесь не так",
-	act = function (s)
-		dowser_dreams()
-	end
- };
-	
-withe_w = obj {
-	nam = "Лоза1",
-	dsc = "{Трепещут чесалки}",
-	act =function (s)
-	 dowser_dreams()
-	end;
- };
- 
-withe_s = obj {
-	nam = "Лоза2",
-	dsc = "{Сильно трепещут чесалки}",
-	act = function (s)
-		dowser_dreams()
-	end
-		}; 
-
-
-withe_ss = obj {
-	nam = "Лоза3",
-	dsc = "{Очень cильно трепещут чесалки}",
-	act = function (s)
-		dowser_dreams()
-	end
-		};
-
 confidenser = menu {
 	nam = "ДОВ +",
 	menu = function (s)
@@ -342,43 +309,53 @@ for x = 1, maxX do
 end
 --stead.add_var {cells}
 
-main=cells[1][1]
+function populateDowseCell(ci,cj,i,j)  -- "населить"" клетку объектами лозы. Вода в ci,cj
+	d=((i-ci)^2 + (j-cj)^2)^(1/2)
 
-for k,v in pairs(water_wells) do
-	for i =v[1]-2,v[1]+2 do
-		for j =v[2]-2,v[2]+2 do
+	if (d<0.5) then
+		v = new [[obj {nam = 'VeryStrongDowse', dsc='{Очень cильно трепещут чесалки.}', act = dowser_dreams, tags='dowse' } ]] 
+	end
+	if (d>0.5) and (d<1.5) then
+		v = new [[obj {nam = 'StrongDowse', dsc='{Сильно трепещут чесалки.}', act = dowser_dreams } ]] 
+	end
+
+	if (d>1.5) and (d<2.5) then
+		v = new [[obj {nam = 'Dowse', dsc='{Трепещут чесалки.}', act = dowser_dreams } ]] 
+	end
+    
+	if (d>2.5) then
+		v = new [[obj {nam = 'WeakDowse', dsc='{Сильно трепещут чесалки.}'} ]]
+	end
+
+    objs(cells[i][j]):add(v)
+end
+
+function forNearestCells(ci,cj, f)
+	for i =ci-2,ci+2 do
+		for j =cj-2,cj+2 do
 			if (cells[i]) then
 				if (cells[i][j]) then
-					d=((i-v[1])^2 + (j-v[2])^2)^(1/2)
-
-					if (d<0.5) then
-						objs(cells[i][j]):add(withe_ss)   --очень сильная лоза
-					end
-					if (d>0.5) and (d<1.5) then
-						--put(new [[obj {nam = 'test', dsc='test' } ]],cells[i][j]);
-						objs(cells[i][j]):add(withe_s)   --сильная лоза
-						print (i..','..j..','..'сильная лоза')
-					end
-
-					if (d>1.5) and (d<2.5) then
-						--put(new [[obj {nam = 'test', dsc='{test}',act =dowser_dreams  } ]],cells[i][j]);
-						objs(cells[i][j]):add(withe_w)  --слабая лоза
-						print (i..','..j..','..'слабая лоза')
-					end
-				    
-					if (d>2.5) then
-						--put(new [[obj {nam = 'test', dsc='test' } ]],cells[i][j]);
-				    	objs(cells[i][j]):add(withe_ww); -- совсем слабая лоза
-				    	print (i..','..j..','..'совсем слабая лоза')
-				    end
+					f(ci,cj,i,j)
 				end
 			end
 		end 
 	end 
 end
 
-a,b = objs(cells[17][10]):srch(withe_ss)
-a.dsc="ляляля"
+
+
+for k,v in pairs(water_wells) do
+	forNearestCells(v[1],v[2],populateDowseCell)
+end
+
+main=cells[1][1]
+
+for obj1 in objs(cells[5][1]) do
+	if (obj1.tag=='dowse') then
+		disable(obj1)
+	end
+end
+
 
 --[[x
 cells[1][1] = room {
