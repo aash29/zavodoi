@@ -1,7 +1,12 @@
 global {
 wasteland_dsc_visited ="мы тут уже были",
 wasteland_no_dsc="мы в пустоши",
-direction_deal=false
+direction_deal=false,
+insults={'ну ты и мудак',
+		'я тебя ненавижу',
+		'чтоб ты сдох',
+		'иди на хрен'
+		}
 }
 
 
@@ -13,7 +18,7 @@ for i=1,maxX do
 	for j=1,maxY do
 		wasteland_descriptions[tostring(i)..','..tostring(j)] = {
 		angry = 'angry',
-		neutral = '',
+		neutral = 'neutral',
 		neutral_night = 'neutral_night',
 		kindly_morning = 'kindly_morning',
 		kindly_day = 'kindly_day',
@@ -30,6 +35,9 @@ for i=1,maxX do
 end
 
 
+-- тут можно писать конкретные описания. Можно сделать для этого отдельный файл.
+
+
 function processDescription(dsc)
 	if dsc.neutral=='' then dsc.neutral=wasteland_no_dsc end
 	if dsc.angry=='' then dsc.angry=dsc.neutral end
@@ -39,12 +47,10 @@ function processDescription(dsc)
 	if dsc.kindly_night=='' then dsc.kindly_night=dsc.kindly_day end
 	if dsc.kindly_evening=='' then dsc.kindly_evening=dsc.kindly_night end
 	if dsc.visited=='' then dsc.visited=dsc.wasteland_dsc_visited end
+	dsc.insult = insults[math.random(1, #insults)]
 	return dsc
---[[
-	insult -> случайное из массива insults
-	comment пропускаем
+--[[	comment пропускаем
 	subdirections пропускаем
-	visited -> wasteland_dsc_visited
 	extra пропускаем
 	]]--
 

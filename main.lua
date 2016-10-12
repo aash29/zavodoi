@@ -31,7 +31,7 @@ global {
 	thirst = 0;
 	
 	confidence = 0;
-	sympathy = 0;
+	sympathy = -1;
 
 	maxX =17;
 	maxY =12;
