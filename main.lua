@@ -11,6 +11,9 @@ require "dbg" -- для отладки
 require "./modules/keyboard"
 require "xact"
 
+
+
+
 game.forcedsc = true; -- атрибут, чтобы описание сцены не пряталось *без game можно добавлять в каждой сцене)
 
 global {
@@ -39,6 +42,8 @@ global {
 	
 stead.phrase_prefix = '* ';
 																	--[[ ФУНКЦИИ ]]--
+
+dofile("descriptions.lua")
  
 function dowser_dreams()
 	if thirst > 2 then
@@ -79,7 +84,8 @@ function myconstructor(x,y)
 	v.x = x
 	v.y = y
 	v.nam =   tostring(x)..",".. tostring(y)
-	v.dsc = 'Мы где-то в пустоши.'
+	--v.dsc = 'Мы где-то в пустоши.'
+	v.dsc = constructDescription('1,1')
 
 	
 	local north = vroom('Север', 'cells['..tostring(x)..']'..'['..tostring(y-1)..']')
@@ -252,11 +258,20 @@ hunger_scene = room {
 	
 																	--[[ СТАРТ ]]--
 
+
+function getTimeOfDay(turn)
+	day = math.ceil (turn / 4)
+	time_of_day = turn - day * 4 + 4
+	return time_of_day
+end
+
 status_map = stat {
         nam = 'статус';
 	disp = function(s)
-		day = math.ceil (turn / 4)
-		time_of_day = turn - day * 4 + 4
+		--day = math.ceil (turn / 4)
+		--time_of_day = turn - day * 4 + 4
+		time_of_day=getTimeOfDay(turn)
+		print('time of day'.. tostring(time_of_day))
 		pn ('Ход: ', turn)
 		pn ('День: ', day)
 		pn ('Время: ', time_list[time_of_day])
@@ -381,6 +396,9 @@ end
 main=cells[1][1]
 
 
+print(constructDescription('1,1'))
+
+
 
 
 
@@ -407,8 +425,5 @@ take(status_relationship)
 
 take('sympathiser')
 take('confidenser')
-
-
-
 
 
