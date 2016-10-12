@@ -83,9 +83,10 @@ function myconstructor(x,y)
 	local v={};
 	v.x = x
 	v.y = y
+	v.visited=false
 	v.nam =   tostring(x)..",".. tostring(y)
 	--v.dsc = 'Мы где-то в пустоши.'
-	v.dsc = constructDescription('1,1')
+	v.dsc = constructDescription
 
 	
 	local north = vroom('Север', 'cells['..tostring(x)..']'..'['..tostring(y-1)..']')
@@ -187,11 +188,12 @@ function myconstructor(x,y)
 		end
 		
 	end
-	--[[
+	
 	v.exit = function (s, f)
-		youarehere = s.x,s.y
+		--youarehere = s.x,s.y
+		s.visited=true
 	end	
-	]]--
+	
 	
 	return room(v)
 end
@@ -396,7 +398,7 @@ end
 main=cells[1][1]
 
 
-print(constructDescription('1,1'))
+--print(wasteland_dsc_visited)
 
 
 
