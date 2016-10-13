@@ -36,7 +36,7 @@ global {
 	maxX =17;
 	maxY =12;
 
-	water_wells = {{5,1},{5,9},{9,6}, {14,3},{17,10}};
+	water_wells = {{5,1},{5,9},{9,6},{14,3},{17,10}};
 
 	}
 	
@@ -44,6 +44,7 @@ stead.phrase_prefix = '* ';
 																	--[[ ФУНКЦИИ ]]--
 
 dofile("descriptions.lua")
+dofile("forest.lua")
  
 function dowser_dreams()
 	if thirst > 2 then
@@ -395,9 +396,19 @@ for k,v in pairs(water_wells) do
 	forNearestCells(v[1],v[2],populateDowseCell)
 end
 
-main=cells[1][1]
 
 
+
+for k,v in pairs(scrambleDirections(main)) do
+	print(k,v)
+end
+
+cells[2][2].ways=scrambleDirections(cells[2][2])
+
+
+main=cells[2][2]
+
+--print(main.way)
 --print(wasteland_dsc_visited)
 
 
