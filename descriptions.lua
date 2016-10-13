@@ -29,7 +29,9 @@ for i=1,maxX do
 		subdirections = 'subdirections',
 		visited = 'visited',
 		extra = 'extra',
-		extra_rule = [[]]
+		extra_rule = function()
+		 return nil 
+		end
 	}
 	end
 end
@@ -110,9 +112,13 @@ function constructDescription(room)
 			--print(result)
 		end
 	end
+
+	if (dsc.extra_rule()) then
+		result=result .. dsc.extra.. '\n'
+	end
+
 	return result
-	--if дополнительное условие:
-	--	extra в стек
+
 end
 
 
