@@ -31,7 +31,7 @@ global {
 	thirst = 0;
 	
 	confidence = 0;
-	sympathy = -1;
+	sympathy = 0;
 
 	maxX =17;
 	maxY =12;
@@ -121,6 +121,10 @@ function myconstructor(x,y)
 	
 	v.entered = function (s)
 
+
+		if (cells[youarehere[1]][youarehere[2]].tags=="forest") and (cells[s.x][s.y].tags~="forest") then
+			pn ('Наконец-то выбрались из леса')
+		end
 		youarehere[1]=s.x
 		youarehere[2]=s.y
 
@@ -401,12 +405,12 @@ end
 for k,v in pairs(forest) do
 	print(v[1],v[2])
     scrambleDirections(cells[v[1]][v[2]])
+    wasteland_descriptions[tostring(v[1])..','..tostring(v[2])].debug="Лес."..wasteland_descriptions[tostring(v[1])..','..tostring(v[2])].debug
+    cells[v[1]][v[2]].tags="forest"
 end
 
 main=cells[2][2]
-path('Север', main):disable();
---main.way:zap()
---main.way:add(vroom("Север",cells[2][1]))
+--main.way:add((hunger_scene))
 --print(main.way)
 --print(wasteland_dsc_visited)
 

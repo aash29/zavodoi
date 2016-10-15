@@ -1,4 +1,6 @@
 
+
+
 math.randomseed(os.time())
 
 function deepcopy(orig)
@@ -48,7 +50,7 @@ function scrambleDirections(room)
 
     end
     
-    room.way:add(vroom('Голод', hunger_scene))  
+    room.way:add(hunger_scene)  
     --room.way:disable(hunger_scene)
 end
 
