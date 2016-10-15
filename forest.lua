@@ -1,6 +1,3 @@
-wasteland_descriptions['1,7'].neutral = 'Лес'
-wasteland_descriptions['1,6'].neutral = 'Лес'
-wasteland_descriptions['1,5'].neutral = 'Лес'
 
 math.randomseed(os.time())
 
@@ -19,7 +16,9 @@ function deepcopy(orig)
     return copy
 end
 
-function shuffle(room)
+
+
+function scrambleDirections(room)
     list1=deepcopy(room.way)
     -- make and fill array of indices
     local indices = {}
@@ -28,7 +27,7 @@ function shuffle(room)
     end
     room.way:zap()
     -- create shuffled list
-    local shuffled = deepcopy(list1)
+
     for i = 1, #list1-1 do
         -- get a random index
         local index = math.random(#indices)
@@ -45,17 +44,11 @@ function shuffle(room)
         table.remove(indices, index)
 
         -- insert into shuffled array
-        --shuffled[i] = vroom(shuffled[i].nam,value.where)
         room.way:add(vroom(list1[i].nam,value.where))
 
     end
-
-   
-    --return shuffled
+    
+    room.way:add(vroom('Голод', hunger_scene))  
+    --room.way:disable(hunger_scene)
 end
 
-
-function scrambleDirections(room)
-    --room.way:disable_all()
-	return (shuffle(room))
-end

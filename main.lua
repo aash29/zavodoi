@@ -37,6 +37,7 @@ global {
 	maxY =12;
 
 	water_wells = {{5,1},{5,9},{9,6},{14,3},{17,10}};
+	forest = {{1,5},{1,6},{1,7}, {2,6},{2,7}, {3,6},{3,7}, {4,5},{4,6},{4,7}, {5,5},{5,6}, {13,12},{14,11},{14,12},{15,11}};
 
 	}
 	
@@ -118,7 +119,7 @@ function myconstructor(x,y)
 	v.obj={}
 
 	
-	v.entered = function (s, f)
+	v.entered = function (s)
 
 		youarehere[1]=s.x
 		youarehere[2]=s.y
@@ -397,18 +398,13 @@ for k,v in pairs(water_wells) do
 end
 
 
-
-
-for k,v in pairs(cells[2][2].way) do
-	print(k,v)
+for k,v in pairs(forest) do
+	print(v[1],v[2])
+    scrambleDirections(cells[v[1]][v[2]])
 end
 
-
-scrambleDirections(cells[2][2])
---cells[2][2].way=deepcopy(rv1)
-
-
 main=cells[2][2]
+path('Север', main):disable();
 --main.way:zap()
 --main.way:add(vroom("Север",cells[2][1]))
 --print(main.way)
