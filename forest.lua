@@ -4,33 +4,58 @@ wasteland_descriptions['1,5'].neutral = 'Лес'
 
 math.randomseed(os.time())
 
-function shuffle(list)
+function deepcopy(orig)
+    local orig_type = type(orig)
+    local copy
+    if orig_type == 'table' then
+        copy = {}
+        for orig_key, orig_value in next, orig, nil do
+            copy[deepcopy(orig_key)] = deepcopy(orig_value)
+        end
+        setmetatable(copy, deepcopy(getmetatable(orig)))
+    else -- number, string, boolean, etc
+        copy = orig
+    end
+    return copy
+end
+
+function shuffle(room)
+    list1=deepcopy(room.way)
     -- make and fill array of indices
     local indices = {}
-    for i = 1, #list do
+    for i = 1, #list1-1 do
         indices[#indices+1] = i
     end
-
+    room.way:zap()
     -- create shuffled list
-    local shuffled = {}
-    for i = 1, #list do
+    local shuffled = deepcopy(list1)
+    for i = 1, #list1-1 do
         -- get a random index
         local index = math.random(#indices)
 
         -- get the value
-        local value = list[indices[index]]
+        local value = list1[indices[index]]
+       --for k,v in pairs(value) do
+       --     print(k,v)
+       -- end
+       print(value.nam)
+       print(value.where)
 
         -- remove it from the list so it won't be used again
         table.remove(indices, index)
 
         -- insert into shuffled array
-        shuffled[#shuffled+1] = value
+        --shuffled[i] = vroom(shuffled[i].nam,value.where)
+        room.way:add(vroom(list1[i].nam,value.where))
+
     end
 
-    return shuffled
+   
+    --return shuffled
 end
 
 
 function scrambleDirections(room)
-	return (shuffle(room.way))
+    --room.way:disable_all()
+	return (shuffle(room))
 end

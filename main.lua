@@ -399,15 +399,18 @@ end
 
 
 
-for k,v in pairs(scrambleDirections(main)) do
+for k,v in pairs(cells[2][2].way) do
 	print(k,v)
 end
 
-cells[2][2].ways=scrambleDirections(cells[2][2])
+
+scrambleDirections(cells[2][2])
+--cells[2][2].way=deepcopy(rv1)
 
 
 main=cells[2][2]
-
+--main.way:zap()
+--main.way:add(vroom("Север",cells[2][1]))
 --print(main.way)
 --print(wasteland_dsc_visited)
 
