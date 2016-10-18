@@ -54,3 +54,39 @@ function scrambleDirections(room)
     --room.way:disable(hunger_scene)
 end
 
+harpies = list {}
+
+
+
+
+harpies[1] = new [[obj {
+        nam = 'часы',
+        replies={"ответ 1 гарпии 1",
+        "ответ 2 гарпии 1",
+        "ответ 3 гарпии 1"},
+        --replies[2] = "ответ 2 гарпии 1",
+        cr = 1,
+        dsc = '{Гарпия №1 }',
+        act = function(s)
+                p( s.replies[s.cr]);
+                s.cr=s.cr+1
+        end
+    } ]] 
+
+
+
+
+harpiesScene = room {
+    nam = 'Гарпии';
+    dsc = 'Кругом гарпии';
+    entered = function (s, f)
+        objs():zap()
+        objs():add(harpies[1])
+    end;
+    left = function (s, f)
+    end;
+    obj={};
+    way = {};
+    }
+
+

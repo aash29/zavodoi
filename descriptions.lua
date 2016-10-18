@@ -31,7 +31,8 @@ for i=1,maxX do
 		extra = 'extra',
 		extra_rule = function()
 		 return nil 
-		end
+		end,
+		debug = ''
 	}
 	end
 end
@@ -116,6 +117,8 @@ function constructDescription(room)
 	if (dsc.extra_rule()) then
 		result=result .. dsc.extra.. '\n'
 	end
+
+	result=result .. dsc.debug
 
 	return result
 

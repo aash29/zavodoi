@@ -407,9 +407,10 @@ for k,v in pairs(forest) do
     scrambleDirections(cells[v[1]][v[2]])
     wasteland_descriptions[tostring(v[1])..','..tostring(v[2])].debug="Лес."..wasteland_descriptions[tostring(v[1])..','..tostring(v[2])].debug
     cells[v[1]][v[2]].tags="forest"
+    cells[v[1]][v[2]].way:add(harpiesScene)
 end
 
-main=cells[2][2]
+main=cells[1][5]
 --main.way:add((hunger_scene))
 --print(main.way)
 --print(wasteland_dsc_visited)
