@@ -10,6 +10,13 @@ require "quotes"
 require "dbg" -- для отладки
 require "./modules/keyboard"
 require "xact"
+require "compass"
+
+compass_color = "#FFFFFF"
+compass_acolor = "#FFAA00"
+compass_init()
+
+compass_up_down = false
 
 
 
@@ -99,19 +106,23 @@ function myconstructor(x,y)
 	v.way=list {}
 	if x>1 then
 		table.insert(v.way,west)
+		v.to_w=west
 	end
 
 	if x<maxX then
 		table.insert(v.way,east)
+		v.to_e = east
 	end
 	
 
 	if y>1 then
 		table.insert(v.way,north)
+		v.to_n = north
 	end
 
 	if y<maxY then
 		table.insert(v.way,south)
+		v.to_s = south
 	end
 
 	table.insert(v.way,'hunger_scene')
