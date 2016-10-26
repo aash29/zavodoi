@@ -123,11 +123,13 @@ harpies[5] = new [[obj {
 harpiesAttack = room {
     nam = 'Гарпии напали';
     dsc = 'Гарпии напали';
+    way = {vroom('Еле убежали','cells[youarehere[1]][youarehere[2]]')}
 }
 
 harpiesScene = room {
     nam = 'Гарпии';
     dsc = 'Кругом гарпии';
+    harpy_talk=false,
     entered = function (s, f)
 
         local indices = {}
@@ -153,7 +155,7 @@ harpiesScene = room {
     left = function (s, f)
     end;
     obj={};
-    way = {};
+    way = { vroom('Бежим через лес!', harpiesAttack)};
 }
 
 
